@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout annonce{% endblock %}
+
+{% block body %}
+
+    <div class="row" style="margin: 150px auto;">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h1>Ajouter une annonce</h1>
+            {{ form_start(formAddAdvert) }}
+            {{ form_row(formAddAdvert, {'attr': {'placeholder': 'Titre'}}) }}
+            {{ form_row(formAddAdvert, {'attr': {'placeholder': 'Contenu'}}) }}
+            <button type="submit" class="btn btn-success">Ajouter</button>
+            {{ form_end(formAddAdvert) }}
+        </div>
+    </div>
+
+{% endblock %}

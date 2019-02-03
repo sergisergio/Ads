@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Annonce détaillée{% endblock %}
+
+{% block body %}
+    <section id="services" class="service-item">
+        <div class="container">
+            <div class="row">
+                        <div class="col-md-12">
+                            <div class="media services-wrap wow fadeInDown">
+                                <div class="pull-left">
+                                    <img class="img-responsive" src="images/services/services1.png">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">{{ advert.title }}</h4>
+                                    <h5>Publié par {{ advert.author.username }} le {{ advert.date|date('d/m/Y') }}</h5>
+                                    <p>{{ advert.content}}</p>
+                                </div>
+                                <a href="{{ path('home') }}" class="btn btn-default">
+                                    <i class="glyphicon glyphicon-chevron-left"></i>
+                                    Retour à la liste
+                                </a>
+                                <a href="{{ path('application', {id: advert.id}) }}" class="btn btn-info" >
+                                    <i class="glyphicon glyphicon-edit"></i>
+                                    Postuler
+                                </a>
+                                {% if is_granted('ROLE_ADMIN') or app.user.id == advert.author.id %}
+                                    <a href="{{ path('edit_advert', {'id': advert.id}) }}" class="btn btn-default">
+                                        <i class="glyphicon glyphicon-edit"></i>
+                                        Modifier l'annonce
+                                    </a>
+                                    <a href="{{ path('delete_advert', {'id': advert.id}) }}" class="btn btn-danger" data-toggle='confirmation' id="important_action">
+                                        <i class="glyphicon glyphicon-trash"></i>
+                                        Supprimer l'annonce
+                                    </a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+
+    <section id="feature" class="transparent-bg">
+        <div class="container">
+            <div class="get-started center wow fadeInDown">
+                <h2>Ready to get started</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua. <br>  Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <div class="request">
+                    <h4><a href="#">Request a free Quote</a></h4>
+                </div>
+            </div><!--/.get-started-->
+
+            <div class="clients-area center wow fadeInDown">
+                <h2>What our client says</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 wow fadeInDown">
+                    <div class="clients-comments text-center">
+                        <img src="images/client1.png" class="img-circle" alt="">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>
+                        <h4><span>-John Doe /</span>  Director of corlate.com</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInDown">
+                    <div class="clients-comments text-center">
+                        <img src="images/client2.png" class="img-circle" alt="">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>
+                        <h4><span>-John Doe /</span>  Director of corlate.com</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInDown">
+                    <div class="clients-comments text-center">
+                        <img src="images/client3.png" class="img-circle" alt="">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>
+                        <h4><span>-John Doe /</span>  Director of corlate.com</h4>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section><!--/#feature-->
+
+
+
+{% endblock %}
