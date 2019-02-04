@@ -9,9 +9,9 @@
                 <h2>Nos annonces ({{ pagination.getTotalItemCount }})</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
-
+            {{ knp_pagination_render(pagination) }}
             <div class="row">
-                {{ knp_pagination_render(pagination) }}
+
             {% for advert in pagination %}
                 <a href="{{ path('advert', {id: advert.id}) }}">
                 <div class="col-sm-6 col-md-6">
@@ -20,15 +20,19 @@
                             <img class="img-responsive" src="images/services/services1.png">
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">{{ advert.title }}</h4>
+                            <h4 class="media-heading">{{ advert.title }}</h4><br/>
+                            {% for category in advert.categories %}
+                                <span class="badge badge-secondary">{{ category.name }}</span>
+                            {% endfor %}
                             <p>{{ advert.content | slice(0, 100) }}...</p>
                         </div>
                     </div>
                 </div>
                 </a>
             {% endfor %}
-                {{ knp_pagination_render(pagination) }}
+
             </div><!--/.row-->
+            {{ knp_pagination_render(pagination) }}
 
         </div><!--/.container-->
     </section><!--/#services-->

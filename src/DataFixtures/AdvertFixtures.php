@@ -76,6 +76,6 @@ class AdvertFixtures extends Fixture implements DependentFixtureInterface
      */
     public function getDependencies()
     {
-        return [UserFixtures::class];
+        return [UserFixtures::class, CategoryFixtures::class];
     }
 }

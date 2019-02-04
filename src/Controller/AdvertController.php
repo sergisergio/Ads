@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Advert;
+use App\Entity\Category;
 use App\Form\AddAdvertType;
 use App\Repository\AdvertRepository;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -89,6 +90,14 @@ class AdvertController extends AbstractController
             if ($form->isSubmitted() && $form->isValid()) {
                 $advert->setAuthor($this->getUser());
                 $advert->setPublished(false);
+
+                $categories = $this->getDoctrine()->getRepository(Category::class)->findAll();
+
+                // On boucle sur les catégories pour les lier à l'annonce
+                foreach ($categories as $category) {
+                    $advert->addCategory($category);
+                }
+
                 $manager->persist($advert);
                 $manager->flush();
                 $this->addFlash(

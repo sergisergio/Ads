@@ -45,3 +45,17 @@ DOC:
 - ApplicationController,  ApplicationType form.
 - possibility to send an application to an advert.
 
+### Step 2
+
+- Category Entity created (with constraints and Unique Entity)
+- relation ManyToMany with Advert Entity ( categories field).
+- addAdvertType modified (EntityType, class Category, multiple)
+- CategoryFixtures and categories can be seen in templates (index & view.html.twig)
+- Add and Edit an advert with some categories works.
+- We have now 4 entities :
+1) User related to Advert (OneToMany) and Application (OneToMany).
+2) Advert related to User (ManyToOne), Application (OneToMany) and Category (ManyToMany).
+3) Application related to User (ManyToOne) and Advert (ManyToOne).
+4) Category related to Advert (ManyToMany).
+
+
