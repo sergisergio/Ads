@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminCategoryController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h2>Contextual Classes</h2>
+        <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+
+        {{ form_start(formCategory) }}
+        {{ form_row(formCategory.name, {'label': 'Nom *', 'attr': {'placeholder': 'Entrez une nouvelle catégorie'}}) }}
+        <button type="submit" class="btn btn-success">Ajouter</button>
+        {{ form_end(formCategory) }}
+        <table class="table" style="margin: 150px auto;">
+            <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Supprimer</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for category in categories %}
+                <tr class="default">
+                    <td>{{ category.name }}</td>
+                    <td><a href="{{ path('delete_category', {'id': category.id}) }}" class="btn btn-danger">
+                            <i class="glyphicon glyphicon-trash"></i>
+                            Supprimer
+                        </a></td>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

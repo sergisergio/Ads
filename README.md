@@ -58,4 +58,15 @@ DOC:
 3) Application related to User (ManyToOne) and Advert (ManyToOne).
 4) Category related to Advert (ManyToMany).
 
+### Step 3
+
+- Department Entity created 
+- relation OneToMany with Advert Entity (department field).
+- DepartmentType form created.
+- addAdvertType modified including DepartmentType so that we can see now where the advert is.
+- DepartmentFixtures has been done with all french departments.
+- Admin part has been enhanced:
+- Admin can now change the User's role.
+- Admin can now validate an advert.
+- Admin can add or delete a category.
 

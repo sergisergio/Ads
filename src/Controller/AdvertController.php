@@ -8,10 +8,12 @@ use App\Form\AddAdvertType;
 use App\Repository\AdvertRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 use Knp\Component\Pager\PaginatorInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 class AdvertController extends AbstractController
 {
@@ -49,6 +51,7 @@ class AdvertController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $advert->setDate(new \DateTime());
             $advert->setAuthor($this->getUser());
+
             $manager->persist($advert);
             $manager->flush();
 

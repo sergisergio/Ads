@@ -6,20 +6,18 @@
     <section id="services" class="service-item">
         <div class="container">
             <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-10 col-md-offset-1">
                             <div class="media services-wrap wow fadeInDown">
-                                <div class="pull-left">
-                                    <img class="img-responsive" src="images/services/services1.png">
-                                </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">{{ advert.title }}</h4><br />
+                                    <span class="pull-right badge badge-secondary">{{ advert.department.name }}</span>
+                                    <h3 class="media-heading">{{ advert.title }}</h3><br />
                                     {% for category in advert.categories %}
                                         <span class="badge badge-secondary">{{ category.name }}</span>
                                     {% endfor %}
                                     <h5>Publié par {{ advert.author.username }} le {{ advert.date|date('d/m/Y') }}</h5>
                                     <p>{{ advert.content}}</p>
                                 </div>
-                                <a href="{{ path('home') }}" class="btn btn-default">
+                                <a href="{{ path('adverts') }}" class="btn btn-default">
                                     <i class="glyphicon glyphicon-chevron-left"></i>
                                     Retour à la liste
                                 </a>

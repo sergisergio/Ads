@@ -8,8 +8,10 @@
         <div class="col-sm-8 col-sm-offset-2 text-center">
             <h1>Modifier une annonce</h1>
             {{ form_start(formEditAdvert) }}
-            {{ form_row(formEditAdvert, {'attr': {'placeholder': 'Titre'}}) }}
-            {{ form_row(formEditAdvert, {'attr': {'placeholder': 'Contenu'}}) }}
+            {{ form_row(formEditAdvert.title, {'label': 'Titre *', 'attr': {'placeholder': 'Titre'}}) }}
+            {{ form_row(formEditAdvert.content, {'label': 'Contenu *', 'attr': {'placeholder': 'Contenu'}}) }}
+            {{ form_row(formEditAdvert.categories, {'label': 'Catégories *', 'attr': {'placeholder': 'Catégories'}}) }}
+            {{ form_row(formEditAdvert.department, {'label': 'Département *', 'attr': {'placeholder': 'Département'}}) }}
             <button type="submit" class="btn btn-success">Modifier</button>
             {{ form_end(formEditAdvert) }}
         </div>

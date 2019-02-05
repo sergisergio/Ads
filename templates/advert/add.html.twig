@@ -7,9 +7,14 @@
     <div class="row" style="margin: 150px auto;">
         <div class="col-sm-8 col-sm-offset-2 text-center">
             <h1>Ajouter une annonce</h1>
-            {{ form_start(formAddAdvert) }}
-            {{ form_row(formAddAdvert, {'attr': {'placeholder': 'Titre'}}) }}
-            {{ form_row(formAddAdvert, {'attr': {'placeholder': 'Contenu'}}) }}
+            {{ form_start(formAddAdvert, {
+                'Attr': {'class': 'form-signin'}
+            }) }}
+            {{ form_row(formAddAdvert.title, {'label': 'Titre *', 'attr': {'placeholder': 'Titre'}}) }}
+            {{ form_row(formAddAdvert.content, {'label': 'Contenu *', 'attr': {'placeholder': 'Contenu'}}) }}
+            {{ form_row(formAddAdvert.categories, {'label': 'Catégories *', 'attr': {'placeholder': 'Catégories'}}) }}
+            {{ form_row(formAddAdvert.department, {'label': 'Département *', 'attr': {'placeholder': 'Département'}}) }}
+
             <button type="submit" class="btn btn-success">Ajouter</button>
             {{ form_end(formAddAdvert) }}
         </div>

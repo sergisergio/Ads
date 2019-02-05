@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminUserController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h2>Contextual Classes</h2>
+        <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+        <table class="table" style="margin: 150px auto;">
+            <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Rôle</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for user in users %}
+                {% for role in user.roles %}
+                <tr class="{%  if role == 'ROLE_USER' %}info{% else %}danger{% endif %}  }}">
+                    <td></td>
+                    <td></td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                        <td>
+                            {% if role == 'ROLE_USER' %}
+                                Utilisateur (<a href="{{ path('admin_on', {id: user.id}) }}">Passer en Admin</a>)
+                            {% else %}
+                                Administrateur (<a href="{{ path('admin_off', {id: user.id}) }}">Retirer Admin</a>)
+                            {% endif %}
+                        </td>
+                </tr>
+                {% endfor %}
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

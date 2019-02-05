@@ -16,4 +16,14 @@ class AccountController extends AbstractController
             'controller_name' => 'AccountController',
         ]);
     }
+
+    /**
+     * @Route("/account/cv", name="add_cv")
+     */
+    public function curriculum()
+    {
+        return $this->render('account/cv.html.twig', [
+            'controller_name' => 'AccountController',
+        ]);
+    }
 }

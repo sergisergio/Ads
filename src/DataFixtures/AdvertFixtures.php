@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Advert;
+use App\Entity\Department;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -62,6 +63,11 @@ class AdvertFixtures extends Fixture implements DependentFixtureInterface
             //$manager->persist($image);
             // On lie l'image à l'annonce
             //$advert->setImage($image);
+
+            $department = new Department();
+            $department->setName('75 Paris');
+            $manager->persist($department);
+            $advert->setDepartment($department);
             $advert->setAuthor($this->getReference('user'));
             $manager->persist($advert);
         }
@@ -76,6 +82,6 @@ class AdvertFixtures extends Fixture implements DependentFixtureInterface
      */
     public function getDependencies()
     {
-        return [UserFixtures::class, CategoryFixtures::class];
+        return [UserFixtures::class, CategoryFixtures::class, DepartmentFixtures::class];
     }
 }

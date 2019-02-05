@@ -7,7 +7,6 @@
         <div class="container">
             <div class="center wow fadeInDown">
                 <h2>Nos annonces ({{ pagination.getTotalItemCount }})</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
             {{ knp_pagination_render(pagination) }}
             <div class="row">
@@ -16,10 +15,15 @@
                 <a href="{{ path('advert', {id: advert.id}) }}">
                 <div class="col-sm-6 col-md-6">
                     <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services1.png">
-                        </div>
                         <div class="media-body">
+                            <div>
+                                <span class="pull-left indexdate">
+                                        {{ advert.date|date('d/m/Y') }}
+                                </span>
+                                <span class="pull-right badge badge-primary">
+                                        {{ advert.department.name }}
+                                </span>
+                            </div>
                             <h4 class="media-heading">{{ advert.title }}</h4><br/>
                             {% for category in advert.categories %}
                                 <span class="badge badge-secondary">{{ category.name }}</span>

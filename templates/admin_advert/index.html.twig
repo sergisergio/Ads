@@ -4,10 +4,32 @@
 
 {% block body %}
 
-    <div class="row" style="margin: 150px auto;">
-        <div class="col-sm-8 col-sm-offset-2 text-center">
-            <h1>Administration</h1>
-        </div>
+    <div class="container">
+        <h2>Contextual Classes</h2>
+        <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+        <table class="table" style="margin: 150px auto;">
+            <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Date</th>
+                <th>Email</th>
+                <th>Publication (clic pour modification)</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for advert in adverts %}
+                    <tr class="success">
+                        <td>{{ advert.title }}</td>
+                        <td>{{ advert.author.username }}</td>
+                        <td>{{ advert.date|date('d/m/Y') }}</td>
+                        <td>{{ advert.author.email }}</td>
+                        <td class="{% if advert.published %}success{% else %}danger{% endif %}">{% if advert.published %}
+                                <a href="{{ path('unpublish_advert', {id: advert.id}) }}">Publié</a>  {% else %} <a href="{{ path('publish_advert', {id: advert.id}) }}">En attente</a>{% endif %}</td>
+                    </tr>
+            {% endfor %}
+            </tbody>
+        </table>
     </div>
 
 {% endblock %}
