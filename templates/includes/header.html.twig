@@ -19,17 +19,19 @@
                     <!--<li><a href="portfolio.html">Portfolio</a></li>-->
                     <!--<li><a href="blog.html">Blog</a></li>-->
                     <li><a href="{{ path('contact') }}">Contact</a></li>
-                    {% if is_granted('ROLE_ADMIN') %}
-                        <li class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Admin
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ path('admin_users') }}">Gestion Utilisateurs</a></li>
-                                <li><a href="{{ path('admin_adverts') }}">Gestion annonces</a></li>
-                                <li><a href="#">Gestion candidatures</a></li>
-                                <li><a href="{{ path('admin_categories') }}">Gestion catégories</a></li>
-                            </ul>
-                        </li>
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <li class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Admin
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{ path('admin_users') }}">Gestion Utilisateurs</a></li>
+                                    <li><a href="{{ path('admin_adverts') }}">Gestion annonces</a></li>
+                                    <li><a href="#">Gestion candidatures</a></li>
+                                    <li><a href="{{ path('admin_categories') }}">Gestion catégories</a></li>
+                                </ul>
+                            </li>
+                        {% endif %}
                     {% endif %}
 
                     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
@@ -37,7 +39,8 @@
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Mon compte
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                <li><a href="{{ path('account') }}">Mon profil</a></li>
+                                <li><a href="{{ path('account', {id: app.user.id}) }}">Mon profil</a></li>
+                                <li><a href="{{ path('my_adverts', {id: app.user.id}) }}">Mes annonces</a></li>
                                 <li><a href="{{ path('add_advert') }}">Ajouter une annonce</a></li>
                                 <li><a href="{{ path('add_cv') }}">Télécharger mon CV</a></li>
                                 <li><a href="{{ path('security_logout') }}">Déconnexion</a></li>

@@ -4,22 +4,21 @@
 
 {% block body %}
     <div class="map">
-        <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kuningan,+Jakarta+Capital+Region,+Indonesia&amp;aq=3&amp;oq=kuningan+&amp;sll=37.0625,-95.677068&amp;sspn=37.410045,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Kuningan&amp;t=m&amp;z=14&amp;ll=-6.238824,106.830177&amp;output=embed">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39599.52358568007!2d2.306164382266313!3d48.85496143724969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1549390615617" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <section id="contact-page">
         <div class="container">
             <div class="center">
-                <h2>Drop Your Message</h2>
-                <p class="lead">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2>Contact</h2>
+                <p class="lead">Veuillez remplir les champs ci-dessous.</p>
             </div>
             <div class="row contact-wrap">
                 <div class="status alert alert-success" style="display: none"></div>
                 <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
-                            <label>Name *</label>
+                            <label>Nom *</label>
                             <input type="text" name="name" class="form-control" required="required">
                         </div>
                         <div class="form-group">
@@ -27,17 +26,17 @@
                             <input type="email" name="email" class="form-control" required="required">
                         </div>
                         <div class="form-group">
-                            <label>Phone</label>
+                            <label>Téléphone</label>
                             <input type="number" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Company Name</label>
+                            <label>Société</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-5">
                         <div class="form-group">
-                            <label>Subject *</label>
+                            <label>Sujet *</label>
                             <input type="text" name="subject" class="form-control" required="required">
                         </div>
                         <div class="form-group">
@@ -45,7 +44,7 @@
                             <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Envoyer</button>
                         </div>
                     </div>
                 </form>

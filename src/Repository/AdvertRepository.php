@@ -60,4 +60,18 @@ class AdvertRepository extends ServiceEntityRepository
             ->orderBy('a.date', 'DESC')
             ;
     }
+
+    /**
+     * @param string|null $term
+     */
+    public function getByDepartmentQueryBuilder(?string $department): QueryBuilder
+    {
+        $qb = $this->createQueryBuilder('a')
+            ->andWhere('a.department LIKE :department')
+            ->setParameter('department', $department)
+            ->getQuery()
+            ->getResult();
+
+        return $qb;
+    }
 }

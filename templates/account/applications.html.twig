@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes annonces{% endblock %}
+
+{% block body %}
+
+    <div class="row" style="margin: 150px auto;">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h1>Annonce: {{ advert.title }}</h1>
+            <h3>Il y a {{ listApplications|length }} candidatures</h3>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Auteur</th>
+                    <th>Contenu</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for application in listApplications %}
+                <tr>
+                    <td>{{ application.author.username }}</td>
+                    <td>{{ application.content }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

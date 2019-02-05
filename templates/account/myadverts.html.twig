@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes annonces{% endblock %}
+
+{% block body %}
+
+    <div class="row" style="margin: 150px auto;">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h1>Mes annonces</h1>
+            Annonces:
+            {% for advert in adverts %}
+                <a href="{{ path('list_applications', {id: advert.id}) }}">{{ advert.title }}</a>
+
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+{% endblock %}

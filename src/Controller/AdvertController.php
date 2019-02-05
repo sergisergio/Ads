@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Advert;
 use App\Entity\Category;
 use App\Form\AddAdvertType;
+use App\Form\DepartmentType;
 use App\Repository\AdvertRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -34,9 +35,31 @@ class AdvertController extends AbstractController
             10/*limit per page*/
         );
 
+        $form = $this->createForm(DepartmentType::class);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid())
+        {
+            $q = $request->query->get('q');
+            $queryBuilder = $repository->getByDepartmentQueryBuilder($q);
+
+            $pagination = $paginator->paginate(
+                $queryBuilder, /* query NOT result */
+                $request->query->getInt('page', 1)/*page number*/,
+                10/*limit per page*/
+            );
+            /*return $this->render('advert/index.html.twig', [
+                //'listAdverts' => $listAdverts,
+                'pagination' => $pagination,
+                'formSearch' => $form->createView(),
+            ]);*/
+
+        }
+
         return $this->render('advert/index.html.twig', [
             //'listAdverts' => $listAdverts,
             'pagination' => $pagination,
+            'formSearch' => $form->createView(),
         ]);
     }
 

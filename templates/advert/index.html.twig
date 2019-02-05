@@ -8,6 +8,14 @@
             <div class="center wow fadeInDown">
                 <h2>Nos annonces ({{ pagination.getTotalItemCount }})</h2>
             </div>
+
+            {{ form_start(formSearch) }}
+            <div class="row" style="display: inline-block;">
+                {{ form_row(formSearch.name) }}
+                <button type="submit" class="btn btn-success">Rechercher</button>
+            </div>
+            {{ form_end(formSearch) }}
+
             {{ knp_pagination_render(pagination) }}
             <div class="row">
 

@@ -7,7 +7,15 @@
     <div class="row" style="margin: 150px auto;">
         <div class="col-sm-8 col-sm-offset-2 text-center">
             <h1>Mon profil</h1>
+
+            {{ form_start(formAccount) }}
+            {{ form_row(formAccount.username, {'label': 'Pseudo *', 'attr': {'placeholder': 'Pseudo'}}) }}
+            {{ form_row(formAccount.email, {'label': 'Email *', 'attr': {'placeholder': 'Email'}}) }}
+            <button type="submit" class="btn btn-success">Modifier</button>
+            {{ form_end(formAccount) }}
         </div>
     </div>
+
+
 
 {% endblock %}

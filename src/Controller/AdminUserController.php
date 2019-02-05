@@ -53,4 +53,31 @@ class AdminUserController extends AbstractController
         $this->addFlash('success', 'Ce membre n\'est plus administrateur');
         return $this->redirectToRoute('admin_users');
     }
+
+
+    /**
+     * @Route("/admin/users/admin", name="admin_users_admin")
+     */
+    public function adminOnly()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $users = $em->getRepository(User::class)->findByRole('ROLE_ADMIN');
+
+        return $this->render('admin_user/index.html.twig', [
+            'users' => $users,
+        ]);
+    }
+
+    /**
+     * @Route("/admin/users/users", name="admin_users_users")
+     */
+    public function usersOnly()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $users = $em->getRepository(User::class)->findByRole('ROLE_USER');
+
+        return $this->render('admin_user/index.html.twig', [
+            'users' => $users,
+        ]);
+    }
 }

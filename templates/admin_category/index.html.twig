@@ -3,15 +3,14 @@
 {% block title %}Hello AdminCategoryController!{% endblock %}
 
 {% block body %}
-    <div class="container">
-        <h2>Contextual Classes</h2>
-        <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
-
+    <div class="container" style="margin-top: 150px;">
+        <h2>Gestion des catégories</h2>
+        {{ include('includes/flashmessages.html.twig') }}
         {{ form_start(formCategory) }}
         {{ form_row(formCategory.name, {'label': 'Nom *', 'attr': {'placeholder': 'Entrez une nouvelle catégorie'}}) }}
         <button type="submit" class="btn btn-success">Ajouter</button>
         {{ form_end(formCategory) }}
-        <table class="table" style="margin: 150px auto;">
+        <table class="table" style="margin: 50px auto;">
             <thead>
             <tr>
                 <th>Titre</th>

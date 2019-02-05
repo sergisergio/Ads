@@ -70,3 +70,12 @@ DOC:
 - Admin can now validate an advert.
 - Admin can add or delete a category.
 
+### Step 3
+
+- Start Account Page
+- Possibility to see my created adverts
+- Possibility to see applications for those adverts.
+- Add Flash messages.
+- Todo: search form and possibility for a user to send a file, Set recruiter and user roles.
+
+
