@@ -1,12 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Mes annonces{% endblock %}
+{% block title %}Mes candidatures{% endblock %}
 
 {% block body %}
 
     <div class="row" style="margin: 150px auto;">
         <div class="col-sm-8 col-sm-offset-2 text-center">
             <h1>Annonce: {{ advert.title }}</h1>
+            {{ include('includes/flashmessages.html.twig') }}
             <h3>Il y a {{ listApplications|length }} candidatures</h3>
             <table class="table table-bordered">
                 <thead>

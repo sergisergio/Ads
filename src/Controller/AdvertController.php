@@ -103,28 +103,30 @@ class AdvertController extends AbstractController
 
     /**
      * @Route("/advert/edit/{id}", name="edit_advert")
+     *
      */
-    public function edit($id, Request $request, ObjectManager $manager)
+    public function edit(Advert $advert, Request $request, ObjectManager $manager)
     {
-        $advert = $this->getDoctrine()->getRepository(Advert::class)->find($id);
-        if (null === $advert) {
-            throw new NotFoundHttpException("L'annonce d'id ".$id." nexiste pas");
+        //$advert = $this->getDoctrine()->getRepository(Advert::class)->find($id);
+        if (null == $advert) {
+            throw new NotFoundHttpException("Pas d\'annonce avec cet identifiant");
         }
         if ($advert->getAuthor() === $this->getUser()) {
             $form = $this->createForm(AddAdvertType::class, $advert);
             $form->handleRequest($request);
             if ($form->isSubmitted() && $form->isValid()) {
                 $advert->setAuthor($this->getUser());
+
                 $advert->setPublished(false);
 
-                $categories = $this->getDoctrine()->getRepository(Category::class)->findAll();
+                $categories = $advert->getCategories();
 
                 // On boucle sur les catégories pour les lier à l'annonce
                 foreach ($categories as $category) {
                     $advert->addCategory($category);
                 }
 
-                $manager->persist($advert);
+                //$manager->persist($advert);
                 $manager->flush();
                 $this->addFlash(
                     'notice',

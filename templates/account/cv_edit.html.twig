@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier mon CV{% endblock %}
+
+{% block body %}
+    <div class="container" style="margin-top: 150px;">
+        <h2>Modifier mon CV</h2>
+        {{ include('includes/flashmessages.html.twig') }}
+
+        {{ form_start(cvForm) }}
+        {{ form_row(cvForm.curriculum) }}
+        <button type="submit" class="btn btn-success">Modifier</button>
+        {{ form_end(cvForm) }}
+    </div>
+{% endblock %}

@@ -32,18 +32,22 @@
             </tr>
             </thead>
             <tbody>
+
             {% for user in users %}
-                {% for role in user.roles %}
-                <tr class="{%  if role == 'ROLE_USER' %}info{% else %}danger{% endif %}  }}">
+                {% for role in user.roles|slice(0, 1)  %}
+                <tr class="{%  if role == 'ROLE_RECRUITER' %}info{% elseif role == 'ROLE_CANDIDATE' %}success{% elseif role == 'ROLE_USER' %}warning{% else %}danger{% endif %}  }}">
                     <td></td>
                     <td></td>
                     <td>{{ user.username }}</td>
                     <td>{{ user.email }}</td>
                         <td>
-                            {% if role == 'ROLE_USER' %}
-                                Utilisateur (<a href="{{ path('admin_on', {id: user.id}) }}">Passer en Admin</a>)
-                            {% else %}
+                            {% if role == 'ROLE_RECRUITER' %}
+                                Recruteur (<a href="{{ path('admin_on', {id: user.id}) }}">Passer en Admin</a>)
+                            {% elseif role == 'ROLE_CANDIDATE' %}
+                                Candidat (<a href="{{ path('admin_off', {id: user.id}) }}">Retirer Admin</a>)
+                            {% elseif role == 'ROLE_ADMIN' %}
                                 Administrateur (<a href="{{ path('admin_off', {id: user.id}) }}">Retirer Admin</a>)
+                            {% elseif role == 'ROLE_USER' %}
                             {% endif %}
                         </td>
                 </tr>

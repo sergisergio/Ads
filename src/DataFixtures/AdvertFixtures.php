@@ -68,7 +68,7 @@ class AdvertFixtures extends Fixture implements DependentFixtureInterface
             $department->setName('75 Paris');
             $manager->persist($department);
             $advert->setDepartment($department);
-            $advert->setAuthor($this->getReference('user'));
+            $advert->setAuthor($this->getReference('recruiter'));
             $manager->persist($advert);
         }
         $manager->flush();

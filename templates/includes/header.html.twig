@@ -33,16 +33,26 @@
                             </li>
                         {% endif %}
                     {% endif %}
-
                     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                         <li class="dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Mon compte
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li><a href="{{ path('account', {id: app.user.id}) }}">Mon profil</a></li>
-                                <li><a href="{{ path('my_adverts', {id: app.user.id}) }}">Mes annonces</a></li>
-                                <li><a href="{{ path('add_advert') }}">Ajouter une annonce</a></li>
-                                <li><a href="{{ path('add_cv') }}">Télécharger mon CV</a></li>
+
+                                {# {% if 'ROLE_RECRUITER' in app.user.roles %}#}
+                                {% if is_granted('ROLE_RECRUITER') %}
+                                    <li><a href="{{ path('my_adverts', {id: app.user.id}) }}">Mes annonces</a></li>
+                                    <li><a href="{{ path('add_advert') }}">Ajouter une annonce</a></li>
+                                {% endif %}
+                                {#if 'ROLE_CANDIDATE' in app.user.roles #}
+                                {% if is_granted('ROLE_CANDIDATE') %}
+                                    {% if app.user.curriculum %}
+                                    <li><a href="{{ path('edit_cv', {id: app.user.id}) }}">Modifier mon CV</a></li>
+                                    {% else %}
+                                        <li><a href="{{ path('add_cv', {id: app.user.id}) }}">télécharger mon CV</a></li>
+                                    {% endif %}
+                                {% endif %}
                                 <li><a href="{{ path('security_logout') }}">Déconnexion</a></li>
                             </ul>
                         </li>

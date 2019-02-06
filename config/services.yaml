@@ -5,7 +5,7 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: 'en'
-    images_directory: '%kernel.project_dir%/public/uploads/adverts'
+    cvs_directory: '%kernel.project_dir%/public/uploads/curriculums'
 
 services:
     # default configuration for services in *this* file
@@ -30,4 +30,4 @@ services:
 
     App\Service\FileUploader:
         arguments:
-            $targetDirectory: '%images_directory%'
+            $targetDirectory: '%cvs_directory%'

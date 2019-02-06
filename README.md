@@ -2,6 +2,8 @@
 
 ## 3WA/SensioLabsUniversity Project
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c10e9737f044bdfa78eb8bcc112ed4a)](https://www.codacy.com/app/sergisergio/Ads?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sergisergio/Ads&amp;utm_campaign=Badge_Grade)
+
 ### First step
 
 -  [Template](https://www.free-css.com/free-css-templates/page220/gp)
@@ -70,12 +72,33 @@ DOC:
 - Admin can now validate an advert.
 - Admin can add or delete a category.
 
-### Step 3
+### Step 4
 
 - Start Account Page
 - Possibility to see my created adverts
 - Possibility to see applications for those adverts.
 - Add Flash messages.
-- Todo: search form and possibility for a user to send a file, Set recruiter and user roles.
+
+### Step 5
+
+- User can upload his curriculum vitae now.
+- Roles have been defined: ROLE_RECRUITER and ROLE_CANDIDATE
+- When registering, we must choose recruiter or candidate with a ChoiceType form.
+- So in Twig, you don't see the same things wether you're a recruiter or not.
+- UserFixtures changed consequently.
+- A UploadFile Service has been done and used in AccountController.
+- installed phpunit-bridge
+- installed browser-kit
+- installed css-selector
+- vendor/bin/simple-phpunit (see Tests)
+- vendor/bin/simple-phpunit --coverage-html {path} (see Tests in a browser)
+
+DOC:  
+[SYMFONY DOC UPLOAD FILE](https://symfony.com/doc/current/controller/upload_file.html)  
+[SYMFONY DOC HIERARCHICAL ROLES](https://symfony.com/doc/current/security.html#hierarchical-roles)  
+[SYMFONY DOC TESTS](https://symfony.com/doc/current/testing.html)
+
+![Designer Database](capture1.png)
+
 
 

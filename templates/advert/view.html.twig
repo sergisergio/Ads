@@ -21,10 +21,12 @@
                                     <i class="glyphicon glyphicon-chevron-left"></i>
                                     Retour à la liste
                                 </a>
+                                {% if is_granted('ROLE_CANDIDATE') %}
                                 <a href="{{ path('application', {id: advert.id}) }}" class="btn btn-info" >
                                     <i class="glyphicon glyphicon-edit"></i>
                                     Postuler
                                 </a>
+                                {% endif %}
                                 {% if is_granted('ROLE_ADMIN') or app.user.id == advert.author.id %}
                                     <a href="{{ path('edit_advert', {'id': advert.id}) }}" class="btn btn-default">
                                         <i class="glyphicon glyphicon-edit"></i>

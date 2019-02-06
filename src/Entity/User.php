@@ -43,7 +43,6 @@ class User implements UserInterface
     private $roles = [];
 
     /**
-     * @Assert\NotBlank
      * @Assert\Length(min="5", minMessage="Votre mot de passe doit faire minimum 5 caractères", max=4096)
      */
     private $plainPassword;
@@ -70,6 +69,22 @@ class User implements UserInterface
      * @ORM\OneToMany(targetEntity="App\Entity\Application", mappedBy="author", orphanRemoval=true)
      */
     private $applications;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\File(mimeTypes={ "image/pdf", "image/jpg", "image/png" })
+     */
+    private $curriculum;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $Company;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $mode;
 
     public function __construct()
     {
@@ -237,6 +252,42 @@ class User implements UserInterface
                 $application->setAuthor(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getCurriculum(): ?string
+    {
+        return $this->curriculum;
+    }
+
+    public function setCurriculum(?string $curriculum): self
+    {
+        $this->curriculum = $curriculum;
+
+        return $this;
+    }
+
+    public function getCompany(): ?string
+    {
+        return $this->Company;
+    }
+
+    public function setCompany(?string $Company): self
+    {
+        $this->Company = $Company;
+
+        return $this;
+    }
+
+    public function getMode(): ?string
+    {
+        return $this->mode;
+    }
+
+    public function setMode(string $mode): self
+    {
+        $this->mode = $mode;
 
         return $this;
     }

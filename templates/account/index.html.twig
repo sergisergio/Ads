@@ -1,12 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Administration{% endblock %}
+{% block title %}Mon profil{% endblock %}
 
 {% block body %}
 
     <div class="row" style="margin: 150px auto;">
         <div class="col-sm-8 col-sm-offset-2 text-center">
             <h1>Mon profil</h1>
+            {{ include('includes/flashmessages.html.twig') }}
 
             {{ form_start(formAccount) }}
             {{ form_row(formAccount.username, {'label': 'Pseudo *', 'attr': {'placeholder': 'Pseudo'}}) }}
