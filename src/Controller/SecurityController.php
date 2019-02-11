@@ -30,7 +30,9 @@ class SecurityController extends AbstractController
     /**
      * @Route("/logout", name="security_logout")
      */
-    public function logout() {}
+    public function logout()
+    {
+    }
 
     /**
      * @Route("/register", name="security_register")
@@ -50,8 +52,7 @@ class SecurityController extends AbstractController
 
             if ($mode == 1) {
                 $user->setRoles(['ROLE_RECRUITER']);
-            }
-            else {
+            } else {
                 $user->setRoles(['ROLE_CANDIDATE']);
             }
             $om->persist($user);

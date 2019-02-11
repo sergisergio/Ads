@@ -23,15 +23,15 @@ class ApplicationController extends AbstractController
         //if ($advert->getAuthor() === $this->getUser()) {
             $form = $this->createForm(ApplicationType::class, $application);
             $form->handleRequest($request);
-            if ($form->isSubmitted() && $form->isValid()) {
-                $application->setAdvert($advert);
-                $application->setAuthor($this->getUser());
-                $manager->persist($application);
-                $manager->flush();
+        if ($form->isSubmitted() && $form->isValid()) {
+            $application->setAdvert($advert);
+            $application->setAuthor($this->getUser());
+            $manager->persist($application);
+            $manager->flush();
 
-                $this->addFlash('success', 'Votre inscription a bien été prise en compte');
-                return $this->redirectToRoute('advert', ['id' => $advert->getId()]);
-            }
+            $this->addFlash('success', 'Votre inscription a bien été prise en compte');
+            return $this->redirectToRoute('advert', ['id' => $advert->getId()]);
+        }
         //}
         //else {
         //    $this->addFlash('danger', 'Vous devez être connecté pour postuler à cette annonce !');

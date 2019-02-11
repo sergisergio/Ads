@@ -38,8 +38,7 @@ class AdvertController extends AbstractController
         $form = $this->createForm(DepartmentType::class);
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid())
-        {
+        if ($form->isSubmitted() && $form->isValid()) {
             $q = $request->query->get('q');
             $queryBuilder = $repository->getByDepartmentQueryBuilder($q);
 
@@ -53,7 +52,6 @@ class AdvertController extends AbstractController
                 'pagination' => $pagination,
                 'formSearch' => $form->createView(),
             ]);*/
-
         }
 
         return $this->render('advert/index.html.twig', [

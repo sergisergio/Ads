@@ -2,7 +2,9 @@
 
 ## 3WA/SensioLabsUniversity Project
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c10e9737f044bdfa78eb8bcc112ed4a)](https://www.codacy.com/app/sergisergio/Ads?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sergisergio/Ads&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c10e9737f044bdfa78eb8bcc112ed4a)](https://www.codacy.com/app/sergisergio/Ads?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sergisergio/Ads&amp;utm_campaign=Badge_Grade)  
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sergisergio/Ads/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sergisergio/Ads/?branch=master)  
+[![Maintainability](https://api.codeclimate.com/v1/badges/43cd4ab9f7d28c7085cb/maintainability)](https://codeclimate.com/github/sergisergio/Ads/maintainability)
 
 ### First step
 
@@ -34,12 +36,12 @@ Security DOC:
 - AddAdvertType form created.
 - CRUD done with this entity.
 
-DOC:
-[SF DOC Doctrine](https://symfony.com/doc/current/doctrine.html)
-[SF DOC Relations](https://symfony.com/doc/current/doctrine/associations.html)
-[SF DOC Fixtures](https://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html)
-[SF DOC Validation](https://symfony.com/doc/current/validation.html)
-[SymfonyCasts Pagination](https://symfonycasts.com/screencast/doctrine-relations/pagination)
+DOC:  
+[SF DOC Doctrine](https://symfony.com/doc/current/doctrine.html)  
+[SF DOC Relations](https://symfony.com/doc/current/doctrine/associations.html)  
+[SF DOC Fixtures](https://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html)  
+[SF DOC Validation](https://symfony.com/doc/current/validation.html)  
+[SymfonyCasts Pagination](https://symfonycasts.com/screencast/doctrine-relations/pagination)  
 
 - Application Entity created
 - relation ManyToOne with User Entity (author field)
@@ -96,9 +98,25 @@ DOC:
 DOC:  
 [SYMFONY DOC UPLOAD FILE](https://symfony.com/doc/current/controller/upload_file.html)  
 [SYMFONY DOC HIERARCHICAL ROLES](https://symfony.com/doc/current/security.html#hierarchical-roles)  
-[SYMFONY DOC TESTS](https://symfony.com/doc/current/testing.html)
 
 ![Designer Database](capture1.png)
+
+### Step 6: a bit of quality/performance
+
+- install PHPMetrics (vendor/bin/phpmetrics --report-html=doc/phpmetrics . )  
+- install PHPCodeSniffer (vendor/bin/phpcs et vendor/bin/phpcbf)
+- install PHPMessDetector (vendor/bin/phpmd src/ html unusedcode --reportfile phpmd.html)  
+- install PHP Copy/Paste Detector (vendor/bin/phpcpd . )
+- install Behat
+- Badge Scrutinizer
+- Badge CodeClimate
+
+[PHPMetrics](https://github.com/phpmetrics/PhpMetrics)  
+[PHPCodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)  
+[PHPMessDetector](https://github.com/phpmd/phpmd)  
+[PHP Copy/Paste Detector](https://github.com/sebastianbergmann/phpcpd)  
+[DOC PHPMD](https://phpmd.org/rules/index.html)  
+[Behat](https://packagist.org/packages/behat/behat)  
 
 
 

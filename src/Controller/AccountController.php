@@ -16,7 +16,6 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 
-
 class AccountController extends AbstractController
 {
     /**
@@ -45,7 +44,6 @@ class AccountController extends AbstractController
 
             $this->addFlash('success', 'Votre CV a été téléchargé');
             return $this->redirectToRoute('account', ['id' => $user->getId()]);
-
         }
 
         return $this->render('account/cv.html.twig', [
@@ -69,7 +67,8 @@ class AccountController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             // $file stores the uploaded PDF file
             /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
-            $file = $form->get('curriculum')->getData();;
+            $file = $form->get('curriculum')->getData();
+            ;
             $fileName = $fileUploader->upload($file);
 
             $user->setCurriculum($fileName);
@@ -79,7 +78,6 @@ class AccountController extends AbstractController
 
             $this->addFlash('success', 'Votre CV a été téléchargé');
             return $this->redirectToRoute('account', ['id' => $user->getId()]);
-
         }
 
         return $this->render('account/cv_edit.html.twig', [
@@ -118,7 +116,8 @@ class AccountController extends AbstractController
                     'notice',
                     'Votre compte a bien été modifié!'
                 );
-                dump($request); die();
+                dump($request);
+                die();
                 return $this->redirectToRoute('account', ['id' => $user->getId()]);
             }
             return $this->render('account/index.html.twig', [
@@ -162,7 +161,4 @@ class AccountController extends AbstractController
             'listApplications' => $listApplications
         ]);
     }
-
-
-
 }

@@ -8,7 +8,6 @@
 
 namespace App\Tests\Entity;
 
-
 use App\Entity\User;
 use PHPUnit\Framework\TestCase;
 
@@ -16,7 +15,8 @@ class UserTest extends TestCase
 {
     private $user;
 
-    public function setUp() {
+    public function setUp()
+    {
         $this->user = new User();
     }
 

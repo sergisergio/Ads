@@ -281,6 +281,4 @@ class Advert
     {
         return $this->nbApplications;
     }
-
-
 }

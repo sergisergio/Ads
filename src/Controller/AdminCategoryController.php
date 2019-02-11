@@ -49,5 +49,4 @@ class AdminCategoryController extends AbstractController
         $this->addFlash('success', 'Cette catégorie a bien été supprimée');
         return $this->redirectToRoute('admin_categories');
     }
-
 }

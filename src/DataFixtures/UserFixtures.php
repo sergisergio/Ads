@@ -24,7 +24,7 @@ class UserFixtures extends Fixture
         $candidate->setUsername('Candidate');
         $candidate->setEmail('candidate@candidate.com');
         $candidate->setRoles(['ROLE_CANDIDATE']);
-        $candidate->setPassword($this->passwordEncoder->encodePassword($candidate,'philippe'));
+        $candidate->setPassword($this->passwordEncoder->encodePassword($candidate, 'philippe'));
         $candidate->setMode('0');
         $manager->persist($candidate);
 
@@ -32,14 +32,14 @@ class UserFixtures extends Fixture
         $recruiter->setUsername('Recruteur');
         $recruiter->setEmail('recruiter@recruiter.com');
         $recruiter->setRoles(['ROLE_RECRUITER']);
-        $recruiter->setPassword($this->passwordEncoder->encodePassword($recruiter,'philippe'));
+        $recruiter->setPassword($this->passwordEncoder->encodePassword($recruiter, 'philippe'));
         $recruiter->setMode('1');
         $manager->persist($candidate);
 
         $admin = new User();
         $admin->setUsername('Admin');
         $admin->setEmail('admin@admin.com');
-        $admin->setPassword($this->passwordEncoder->encodePassword($admin,'admin'));
+        $admin->setPassword($this->passwordEncoder->encodePassword($admin, 'admin'));
         $admin->setRoles(['ROLE_ADMIN']);
         $admin->setMode('2');
         $manager->persist($admin);
