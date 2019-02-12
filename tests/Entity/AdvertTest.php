@@ -9,15 +9,21 @@
 namespace App\Tests\Entity;
 
 use App\Entity\Advert;
+use App\Entity\Application;
+use App\Entity\Category;
 use PHPUnit\Framework\TestCase;
 
 class AdvertTest extends TestCase
 {
     private $advert;
+    private $application;
+    private $category;
 
     public function setUp()
     {
         $this->advert = new Advert();
+        $this->application = new Application();
+        $this->category = new Category();
     }
 
     public function testUserIsInstanceOfUserClass()
@@ -59,4 +65,28 @@ class AdvertTest extends TestCase
         $this->advert->setAuthor('author');
         $this->assertSame('author', $this->advert->getAuthor());
     }*/
+
+    public function TestAddApplication()
+    {
+        $this->advert->addApplication($this->application);
+        $this->assertCount(1, $this->advert->getApplications());
+    }
+
+    public function testRemoveApplication()
+    {
+        $this->advert->removeApplication($this->application);
+        $this->assertCount(0, $this->advert->getApplications());
+    }
+
+    public function testAddCategory()
+    {
+        $this->advert->addCategory($this->category);
+        $this->assertCount(1, $this->advert->getCategories());
+    }
+
+    public function testRemoveCategory()
+    {
+        $this->advert->removeCategory($this->category);
+        $this->assertCount(0, $this->advert->getCategories());
+    }
 }

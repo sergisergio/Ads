@@ -8,16 +8,22 @@
 
 namespace App\Tests\Entity;
 
+use App\Entity\Advert;
+use App\Entity\Application;
 use App\Entity\User;
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
 {
     private $user;
+    private $advert;
+    private $application;
 
     public function setUp()
     {
         $this->user = new User();
+        $this->advert = new Advert();
+        $this->application = new Application();
     }
 
     public function testUserIsInstanceOfUserClass()
@@ -87,5 +93,29 @@ class UserTest extends TestCase
     {
         $this->user->setMode('recruiter');
         $this->assertSame('recruiter', $this->user->getMode());
+    }
+
+    public function testAddAdvert()
+    {
+        $this->user->addAdvert($this->advert);
+        $this->assertCount(1, $this->user->getAdverts());
+    }
+
+    public function testRemoveAdvert()
+    {
+        $this->user->removeAdvert($this->advert);
+        $this->assertCount(0, $this->user->getAdverts());
+    }
+
+    public function testAddApplication()
+    {
+        $this->user->addApplication($this->application);
+        $this->assertCount(1, $this->user->getApplications());
+    }
+
+    public function testRemoveApplication()
+    {
+        $this->user->removeApplication($this->application);
+        $this->assertCount(0, $this->user->getApplications());
     }
 }
