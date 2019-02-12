@@ -20,6 +20,7 @@
         "symfony/security-bundle": "4.2.*",
         "symfony/serializer-pack": "*",
         "symfony/swiftmailer-bundle": "^3.1",
+        "symfony/test-pack": "^1.0",
         "symfony/translation": "4.2.*",
         "symfony/twig-bundle": "4.2.*",
         "symfony/validator": "4.2.*",
@@ -34,13 +35,9 @@
         "phpmetrics/phpmetrics": "^2.4",
         "sebastian/phpcpd": "^4.1",
         "squizlabs/php_codesniffer": "3.*",
-        "symfony/browser-kit": "4.2.*",
-        "symfony/css-selector": "4.2.*",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
-        "symfony/phpunit-bridge": "*",
         "symfony/profiler-pack": "*",
-        "symfony/test-pack": "*",
         "symfony/web-server-bundle": "4.2.*"
     },
     "config": {

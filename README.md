@@ -94,7 +94,12 @@ DOC:
 - installed css-selector
 - vendor/bin/simple-phpunit (see Tests)
 - vendor/bin/simple-phpunit --coverage-html {path} (see Tests in a browser)
-
+- vendor/bin/simple-phpunit --testdox (pour voir ce qui est testé)
+- vendor/bin/simple-phpunit --testdox-html {path} 
+- Natif à PHP5.6: phpdbg -qrr phpunit --coverage-html=.... (il faut XDEBUG: php --ri xdebug)
+- Pour les tests, je désinstalle simple-phpunit et je passe par [test-pack](https://packagist.org/packages/symfony/test-pack)
+- Puis bin/phpunit
+- bin/phpunit --coverage-html var/phpunit
 DOC:  
 [SYMFONY DOC UPLOAD FILE](https://symfony.com/doc/current/controller/upload_file.html)  
 [SYMFONY DOC HIERARCHICAL ROLES](https://symfony.com/doc/current/security.html#hierarchical-roles)  
@@ -103,7 +108,7 @@ DOC:
 
 ### Step 6: a bit of quality/performance
 
-- install PHPMetrics (vendor/bin/phpmetrics --report-html=doc/phpmetrics . )  
+- install PHPMetrics (vendor/bin/phpmetrics --report-html=doc/phpmetrics ./src )  
 - install PHPCodeSniffer (vendor/bin/phpcs et vendor/bin/phpcbf)
 - install PHPMessDetector (vendor/bin/phpmd src/ html unusedcode --reportfile phpmd.html)  
 - install PHP Copy/Paste Detector (vendor/bin/phpcpd . )
@@ -116,7 +121,12 @@ DOC:
 [PHPMessDetector](https://github.com/phpmd/phpmd)  
 [PHP Copy/Paste Detector](https://github.com/sebastianbergmann/phpcpd)  
 [DOC PHPMD](https://phpmd.org/rules/index.html)  
-[Behat](https://packagist.org/packages/behat/behat)  
+[Behat](https://packagist.org/packages/behat/behat) 
+
+### Step 7: makefile
+
+- tests, quality, install
+- Beware of identation: cat -e -t -v makefile 
 
 
 

@@ -8,7 +8,6 @@
 
 namespace App\Tests\Controller;
 
-
 use App\Controller\SecurityController;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

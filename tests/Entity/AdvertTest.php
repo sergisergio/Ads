@@ -8,7 +8,6 @@
 
 namespace App\Tests\Entity;
 
-
 use App\Entity\Advert;
 use PHPUnit\Framework\TestCase;
 
@@ -60,6 +59,4 @@ class AdvertTest extends TestCase
         $this->advert->setAuthor('author');
         $this->assertSame('author', $this->advert->getAuthor());
     }*/
-
-
 }

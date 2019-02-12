@@ -8,7 +8,6 @@
 
 namespace App\Tests\Entity;
 
-
 use App\Entity\Department;
 use PHPUnit\Framework\TestCase;
 

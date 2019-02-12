@@ -2,66 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc3fa373-88c1-4da1-9148-d33c26fd954a" name="Default Changelist" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/complexity.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/coupling.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/css/clusterize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/css/material-icons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/css/milligram.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/css/milligram.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/css/roboto.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/fonts/material-icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/fonts/roboto-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/fonts/roboto-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/images/logo-git.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/images/phpmetrics-maintenability.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/classes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/clusterize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/d3.hexbin.v0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/d3.v3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/graph-licenses.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/graph-maintainability.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/history-1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/latest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/js/sort-table.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/junit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/loc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/oop.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/package_relations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/packages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/panel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/relations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/phpmetrics/violations.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Ads.iml" afterPath="$PROJECT_DIR$/.idea/Ads.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/bootstrap.php" afterPath="$PROJECT_DIR$/config/bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="$PROJECT_DIR$/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/AccountController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/AccountController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/AdminAdvertController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/AdminAdvertController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/AdminCategoryController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/AdminCategoryController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/AdminUserController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/AdminUserController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/AdvertController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/AdvertController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/ApplicationController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/ApplicationController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/ContactController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/ContactController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/HomeController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/HomeController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/SecurityController.php.html" afterPath="$PROJECT_DIR$/tests/Controller/SecurityController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/dashboard.html" afterPath="$PROJECT_DIR$/tests/Controller/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/index.html" afterPath="$PROJECT_DIR$/tests/Controller/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataFixtures/AdvertFixtures.php.html" afterPath="$PROJECT_DIR$/tests/DataFixtures/AdvertFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataFixtures/AppFixtures.php.html" afterPath="$PROJECT_DIR$/tests/DataFixtures/AppFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataFixtures/CategoryFixtures.php.html" afterPath="$PROJECT_DIR$/tests/DataFixtures/CategoryFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataFixtures/DepartmentFixtures.php.html" afterPath="$PROJECT_DIR$/tests/DataFixtures/DepartmentFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataFixtures/UserFixtures.php.html" afterPath="$PROJECT_DIR$/tests/DataFixtures/UserFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataFixtures/dashboard.html" afterPath="$PROJECT_DIR$/tests/DataFixtures/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/DataFixtures/index.html" afterPath="$PROJECT_DIR$/tests/DataFixtures/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/Advert.php.html" afterPath="$PROJECT_DIR$/tests/Entity/Advert.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/Application.php.html" afterPath="$PROJECT_DIR$/tests/Entity/Application.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/Category.php.html" afterPath="$PROJECT_DIR$/tests/Entity/Category.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/Department.php.html" afterPath="$PROJECT_DIR$/tests/Entity/Department.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/User.php.html" afterPath="$PROJECT_DIR$/tests/Entity/User.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/UserTest.php" afterPath="$PROJECT_DIR$/tests/Entity/UserTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/dashboard.html" afterPath="$PROJECT_DIR$/tests/Entity/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/index.html" afterPath="$PROJECT_DIR$/tests/Entity/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/AccountType.php.html" afterPath="$PROJECT_DIR$/tests/Form/AccountType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/AddAdvertType.php.html" afterPath="$PROJECT_DIR$/tests/Form/AddAdvertType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/ApplicationType.php.html" afterPath="$PROJECT_DIR$/tests/Form/ApplicationType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/CategoryType.php.html" afterPath="$PROJECT_DIR$/tests/Form/CategoryType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/CurriculumType.php.html" afterPath="$PROJECT_DIR$/tests/Form/CurriculumType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/DepartmentType.php.html" afterPath="$PROJECT_DIR$/tests/Form/DepartmentType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/UserRegistrationType.php.html" afterPath="$PROJECT_DIR$/tests/Form/UserRegistrationType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/dashboard.html" afterPath="$PROJECT_DIR$/tests/Form/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Form/index.html" afterPath="$PROJECT_DIR$/tests/Form/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Kernel.php.html" afterPath="$PROJECT_DIR$/tests/Kernel.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/Version20190203162100.php.html" afterPath="$PROJECT_DIR$/tests/Migrations/Version20190203162100.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/Version20190203175127.php.html" afterPath="$PROJECT_DIR$/tests/Migrations/Version20190203175127.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/Version20190204211448.php.html" afterPath="$PROJECT_DIR$/tests/Migrations/Version20190204211448.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/Version20190206084706.php.html" afterPath="$PROJECT_DIR$/tests/Migrations/Version20190206084706.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/Version20190206085306.php.html" afterPath="$PROJECT_DIR$/tests/Migrations/Version20190206085306.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/Version20190206104849.php.html" afterPath="$PROJECT_DIR$/tests/Migrations/Version20190206104849.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/dashboard.html" afterPath="$PROJECT_DIR$/tests/Migrations/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Migrations/index.html" afterPath="$PROJECT_DIR$/tests/Migrations/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Repository/AdvertRepository.php.html" afterPath="$PROJECT_DIR$/tests/Repository/AdvertRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Repository/ApplicationRepository.php.html" afterPath="$PROJECT_DIR$/tests/Repository/ApplicationRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Repository/CategoryRepository.php.html" afterPath="$PROJECT_DIR$/tests/Repository/CategoryRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Repository/DepartmentRepository.php.html" afterPath="$PROJECT_DIR$/tests/Repository/DepartmentRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Repository/UserRepository.php.html" afterPath="$PROJECT_DIR$/tests/Repository/UserRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Repository/dashboard.html" afterPath="$PROJECT_DIR$/tests/Repository/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Repository/index.html" afterPath="$PROJECT_DIR$/tests/Repository/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Service/FileUploader.php.html" afterPath="$PROJECT_DIR$/tests/Service/FileUploader.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Service/dashboard.html" afterPath="$PROJECT_DIR$/tests/Service/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Service/index.html" afterPath="$PROJECT_DIR$/tests/Service/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/dashboard.html" afterPath="$PROJECT_DIR$/tests/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/index.html" afterPath="$PROJECT_DIR$/tests/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/HomeControllerTest.php" afterPath="$PROJECT_DIR$/tests/Controller/HomeControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" afterPath="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/AdvertTest.php" afterPath="$PROJECT_DIR$/tests/Entity/AdvertTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/ApplicationTest.php" afterPath="$PROJECT_DIR$/tests/Entity/ApplicationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/CategoryTest.php" afterPath="$PROJECT_DIR$/tests/Entity/CategoryTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/DepartmentTest.php" afterPath="$PROJECT_DIR$/tests/Entity/DepartmentTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/log/dev.log" afterPath="$PROJECT_DIR$/var/log/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/log/test.log" afterPath="$PROJECT_DIR$/var/log/test.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -139,41 +132,9 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1290">
+            <state relative-caret-position="1065">
               <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeControllerTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Controller/HomeControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepartmentTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Entity/DepartmentTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Entity/CategoryTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="e#119#143#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -181,64 +142,41 @@
       <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Entity/ApplicationTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="e#119#146#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Advert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Advert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3105">
-              <caret line="282" column="5" lean-forward="false" selection-start-line="282" selection-start-column="5" selection-end-line="282" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdvertTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Entity/AdvertTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="45" column="36" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-              <folding>
-                <element signature="e#119#141#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityControllerTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-              <folding>
-                <element signature="e#123#161#0#PHP" expanded="true" />
-              </folding>
+              <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="31">
+                <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="makefile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -257,7 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/includes/footer.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/bottom.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/translation.yaml" />
         <option value="$PROJECT_DIR$/translations/paginator.fr.yaml" />
@@ -297,8 +234,6 @@
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/Application.php" />
         <option value="$PROJECT_DIR$/src/Entity/Advert.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tests/Entity/UserTest.php" />
         <option value="$PROJECT_DIR$/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/tests/Controller/HomeControllerTest.php" />
@@ -308,6 +243,9 @@
         <option value="$PROJECT_DIR$/tests/Entity/ApplicationTest.php" />
         <option value="$PROJECT_DIR$/tests/Entity/AdvertTest.php" />
         <option value="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/makefile" />
       </list>
     </option>
   </component>
@@ -320,7 +258,6 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
-      <path value="$PROJECT_DIR$/vendor/facebook/webdriver" />
       <path value="$PROJECT_DIR$/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
@@ -380,34 +317,28 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/panther" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
       <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
-      <path value="$PROJECT_DIR$/vendor/symfony/test-pack" />
-      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/vendor/symfony/serializer-pack" />
       <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
       <path value="$PROJECT_DIR$/vendor/symfony/cache" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
       <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
       <path value="$PROJECT_DIR$/vendor/psr/link" />
@@ -439,13 +370,20 @@
       <path value="$PROJECT_DIR$/vendor/behat/gherkin" />
       <path value="$PROJECT_DIR$/vendor/behat/behat" />
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/panther" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="526" />
-    <option name="y" value="222" />
-    <option name="width" value="1256" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="325" />
+    <option name="y" value="24" />
+    <option name="width" value="893" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -478,7 +416,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -489,51 +426,34 @@
             <path>
               <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../agro" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -567,25 +487,29 @@
       <workItem from="1549442264533" duration="20064000" />
       <workItem from="1549615504956" duration="134000" />
       <workItem from="1549874809885" duration="11868000" />
+      <workItem from="1549898453310" duration="737000" />
+      <workItem from="1549960464691" duration="543000" />
+      <workItem from="1549962420314" duration="1934000" />
+      <workItem from="1549964383726" duration="3024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86426000" />
+    <option name="totallyTimeSpent" value="92667000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="-4" width="1853" height="1084" extended-state="6" />
+    <frame x="325" y="24" width="893" height="1048" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16214721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15466352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35706806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37105548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -615,13 +539,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/AccountType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -752,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="83" column="7" lean-forward="false" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,40 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1172">
           <caret line="144" column="49" lean-forward="false" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-          <folding>
-            <marker date="1549884417229" expanded="true" signature="998:1556" ph="{&quot;doctrine/doctrine-fixtures-bundle&quot;: &quot;^3.1&quot;...}" />
-            <marker date="1549884417229" expanded="true" signature="1572:1675" ph="{&quot;sort-packages&quot;: true...}" />
-            <marker date="1549884417229" expanded="true" signature="1603:1638" ph="{&quot;*&quot;: &quot;dist&quot;...}" />
-            <marker date="1549884417229" expanded="true" signature="1693:1757" ph="{...}" />
-            <marker date="1549884417229" expanded="true" signature="1712:1751" ph="{&quot;App\&quot;: &quot;src/&quot;...}" />
-            <marker date="1549884417229" expanded="true" signature="1779:1852" ph="{...}" />
-            <marker date="1549884417229" expanded="true" signature="1798:1846" ph="{&quot;App\Tests\&quot;: &quot;tests/&quot;...}" />
-            <marker date="1549884417229" expanded="true" signature="1869:2112" ph="{&quot;paragonie/random_compat&quot;: &quot;2.*&quot;...}" />
-            <marker date="1549884417229" expanded="true" signature="2129:2408" ph="{...}" />
-            <marker date="1549884417229" expanded="true" signature="2155:2265" ph="{&quot;cache:clear&quot;: &quot;symfony-cmd&quot;...}" />
-            <marker date="1549884417229" expanded="true" signature="2295:2334" ph="[...]" />
-            <marker date="1549884417229" expanded="true" signature="2363:2402" ph="[...]" />
-            <marker date="1549884417229" expanded="true" signature="2426:2464" ph="{&quot;symfony/symfony&quot;: &quot;*&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="232">
-            <caret line="95" column="2" lean-forward="false" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="43" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -911,10 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1549893103408" expanded="true" signature="126688:126714" ph="..." />
-            <marker date="1549893103408" expanded="true" signature="126688:126835" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,13 +828,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
+        <state relative-caret-position="1065">
           <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
           <folding />
         </state>
@@ -976,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="405">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -986,9 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#119#143#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -996,9 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#119#146#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3105">
           <caret line="282" column="5" lean-forward="false" selection-start-line="282" selection-start-column="5" selection-end-line="282" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,9 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="45" column="36" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding>
-            <element signature="e#119#141#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,9 +879,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-          <folding>
-            <element signature="e#123#161#0#PHP" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="31">
+            <caret line="101" column="41" lean-forward="false" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
