@@ -1,3 +1,4 @@
+# Travis CI Configuration File
 
 language: php
 
@@ -13,10 +14,14 @@ env:
 before-install:
 - composer self-update
 
+
+# Before install, failures in this section will result in build status 'errored'
 install:
   - composer install
+  - composer require --dev symfony/phpunit-bridge
   - php bin/console doctrine:schema:create --env=test
   - php bin/console doctrine:fixtures:load -n --env=test
 
+# Script, failures in this section will result in build status 'failed'
 script:
   - make tests
