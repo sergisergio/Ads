@@ -3,6 +3,8 @@
 #   - Indent each level of configuration with 2 spaces. Do not use tabs!
 #   - All section names are case-sensitive.
 #   - Section names should be unique on each level.
+# version format
+version: 1.0.{build}
 
 # scripts that are called at very beginning, before repo cloning
 init:
@@ -22,10 +24,10 @@ install:
   # batch commands start from cmd:
   #- cmd: echo This is batch again
   #- cmd: set MY_VAR=12345
-  - php composer install
-  - php composer require --dev symfony/phpunit-bridge
-  - php bin/console doctrine:schema:create --env=test
-  - php bin/console doctrine:fixtures:load -n --env=test
+  - cmd: php composer install
+  - cmd: php composer require --dev symfony/phpunit-bridge
+  - cmd: php bin/console doctrine:schema:create --env=test
+  - cmd: php bin/console doctrine:fixtures:load -n --env=test
 
 #---------------------------------#
 #       build configuration       #
