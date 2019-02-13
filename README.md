@@ -134,5 +134,33 @@ DOC:
 - tests, quality, install
 - Beware of indentation: cat -e -t -v makefile 
 
+### Step 8: CI
+
+- [Travis CI](https://travis-ci.org/) (Voir fichier .travis.yml à la racine).
+- [Scrutinizer CI](https://scrutinizer-ci.com)
+- [Circle CI](https://circleci.com/) (Voir .circleci/config.yml à la racine).
+- [Appveyor CI](https://ci.appveyor.com/project/sergisergio/ads)
+- [Codeship CI](https://codeship.com/) (configuration online/Vérifier version PHP).
+
+DOC SYMFONY && autres:  
+[Testing](https://symfony.com/doc/current/testing.html)  
+[Customize Bootstrap Process before Running Tests](https://symfony.com/doc/current/testing/bootstrap.html)  
+[Tests](https://symfony.com/doc/current/best_practices/tests.html)  
+[PHPUNIT](https://phpunit.de/)  
+[Simulate HTTP Authentication in a Functional Test](https://symfony.com/doc/current/testing/http_authentication.html)  
+[Test Code interacting with the database](https://symfony.com/doc/current/testing/database.html)  
+[Test Doctrine repositories](https://symfony.com/doc/current/testing/doctrine.html)  
+[DOMCrawler Component](https://symfony.com/doc/current/components/dom_crawler.html)  
+[CssSelector Component](https://symfony.com/doc/current/components/css_selector.html)
+
+Voir également:  
+[Jenkins](https://jenkins.io/)  
+[TeamCity](https://www.jetbrains.com/teamcity/)  
+[Gitlab CI](https://about.gitlab.com/product/continuous-integration/)  
+[Buddy](https://buddy.works/)  
+
+
+
+
 
 

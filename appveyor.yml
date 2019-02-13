@@ -22,8 +22,8 @@ install:
   # batch commands start from cmd:
   #- cmd: echo This is batch again
   #- cmd: set MY_VAR=12345
-  - composer install
-  - composer require --dev symfony/phpunit-bridge
+  - php composer install
+  - php composer require --dev symfony/phpunit-bridge
   - php bin/console doctrine:schema:create --env=test
   - php bin/console doctrine:fixtures:load -n --env=test
 
