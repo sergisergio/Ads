@@ -36,5 +36,4 @@ jobs:
       - run: ./bin/console d:d:c --env=test
       - run: ./bin/console d:s:c --env=test
       - run: ./bin/console d:f:l -n --env=test
-      - run: php composer require --dev symfony/phpunit-bridge
       - run: ./vendor/bin/simple-phpunit

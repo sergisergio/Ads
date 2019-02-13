@@ -107,7 +107,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/serializer-pack" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/test-pack" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/twig-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/twig-bundle" />
@@ -233,7 +232,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/serializer-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/test-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/twig-bridge" />
           <root url="file://$MODULE_DIR$/vendor/symfony/twig-bundle" />
@@ -355,7 +353,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/serializer-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/test-pack" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/twig-bridge" />
           <root url="file://$MODULE_DIR$/vendor/symfony/twig-bundle" />
@@ -386,7 +383,6 @@
           <root url="phar://$MODULE_DIR$/bin/.phpunit/phpunit-6.5/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/bin/.phpunit/phpunit-6.5/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/vendor/bin/.phpunit/phpunit-6.5/vendor/symfony/phpunit-bridge/Tests/DeprecationErrorHandler/deprecation.phar/" />
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/vendor/symfony/phpunit-bridge/Tests/DeprecationErrorHandler/deprecation.phar/" />
@@ -397,7 +393,6 @@
           <root url="phar://$MODULE_DIR$/bin/.phpunit/phpunit-6.5/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/bin/.phpunit/phpunit-6.5/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
-          <root url="phar://$MODULE_DIR$/vendor/bin/.phpunit/phpunit-6.5/vendor/symfony/phpunit-bridge/Tests/DeprecationErrorHandler/deprecation.phar/" />
         </SOURCES>
       </library>
     </orderEntry>
