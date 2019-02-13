@@ -2,9 +2,10 @@
 
 ## 3WA/SensioLabsUniversity Project
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c10e9737f044bdfa78eb8bcc112ed4a)](https://www.codacy.com/app/sergisergio/Ads?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sergisergio/Ads&amp;utm_campaign=Badge_Grade)  
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sergisergio/Ads/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sergisergio/Ads/?branch=master)  
-[![Maintainability](https://api.codeclimate.com/v1/badges/43cd4ab9f7d28c7085cb/maintainability)](https://codeclimate.com/github/sergisergio/Ads/maintainability)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c10e9737f044bdfa78eb8bcc112ed4a)](https://www.codacy.com/app/sergisergio/Ads?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sergisergio/Ads&amp;utm_campaign=Badge_Grade)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sergisergio/Ads/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sergisergio/Ads/?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/43cd4ab9f7d28c7085cb/maintainability)](https://codeclimate.com/github/sergisergio/Ads/maintainability)  
+[![Build Status](https://travis-ci.org/sergisergio/Ads.svg?branch=master)](https://travis-ci.org/sergisergio/Ads)
 
 ### First step
 
@@ -126,7 +127,7 @@ DOC:
 ### Step 7: makefile
 
 - tests, quality, install
-- Beware of identation: cat -e -t -v makefile 
+- Beware of indentation: cat -e -t -v makefile 
 
 
 

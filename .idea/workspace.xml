@@ -2,69 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc3fa373-88c1-4da1-9148-d33c26fd954a" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Ads.iml" afterPath="$PROJECT_DIR$/.idea/Ads.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/AdvertTest.php" afterPath="$PROJECT_DIR$/tests/Entity/AdvertTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/ApplicationTest.php" afterPath="$PROJECT_DIR$/tests/Entity/ApplicationTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/DepartmentTest.php" afterPath="$PROJECT_DIR$/tests/Entity/DepartmentTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Entity/UserTest.php" afterPath="$PROJECT_DIR$/tests/Entity/UserTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/log/test.log" afterPath="$PROJECT_DIR$/var/log/test.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/AccountController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/AccountController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/AdminAdvertController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/AdminAdvertController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/AdminCategoryController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/AdminCategoryController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/AdminUserController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/AdminUserController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/AdvertController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/AdvertController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/ApplicationController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/ApplicationController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/ContactController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/ContactController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/HomeController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/HomeController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/SecurityController.php.html" afterPath="$PROJECT_DIR$/var/tests/Controller/SecurityController.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/Controller/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Controller/index.html" afterPath="$PROJECT_DIR$/var/tests/Controller/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/DataFixtures/AdvertFixtures.php.html" afterPath="$PROJECT_DIR$/var/tests/DataFixtures/AdvertFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/DataFixtures/AppFixtures.php.html" afterPath="$PROJECT_DIR$/var/tests/DataFixtures/AppFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/DataFixtures/CategoryFixtures.php.html" afterPath="$PROJECT_DIR$/var/tests/DataFixtures/CategoryFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/DataFixtures/DepartmentFixtures.php.html" afterPath="$PROJECT_DIR$/var/tests/DataFixtures/DepartmentFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/DataFixtures/UserFixtures.php.html" afterPath="$PROJECT_DIR$/var/tests/DataFixtures/UserFixtures.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/DataFixtures/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/DataFixtures/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/DataFixtures/index.html" afterPath="$PROJECT_DIR$/var/tests/DataFixtures/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Entity/Advert.php.html" afterPath="$PROJECT_DIR$/var/tests/Entity/Advert.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Entity/Application.php.html" afterPath="$PROJECT_DIR$/var/tests/Entity/Application.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Entity/Category.php.html" afterPath="$PROJECT_DIR$/var/tests/Entity/Category.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Entity/Department.php.html" afterPath="$PROJECT_DIR$/var/tests/Entity/Department.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Entity/User.php.html" afterPath="$PROJECT_DIR$/var/tests/Entity/User.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Entity/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/Entity/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Entity/index.html" afterPath="$PROJECT_DIR$/var/tests/Entity/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/AccountType.php.html" afterPath="$PROJECT_DIR$/var/tests/Form/AccountType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/AddAdvertType.php.html" afterPath="$PROJECT_DIR$/var/tests/Form/AddAdvertType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/ApplicationType.php.html" afterPath="$PROJECT_DIR$/var/tests/Form/ApplicationType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/CategoryType.php.html" afterPath="$PROJECT_DIR$/var/tests/Form/CategoryType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/CurriculumType.php.html" afterPath="$PROJECT_DIR$/var/tests/Form/CurriculumType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/DepartmentType.php.html" afterPath="$PROJECT_DIR$/var/tests/Form/DepartmentType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/UserRegistrationType.php.html" afterPath="$PROJECT_DIR$/var/tests/Form/UserRegistrationType.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/Form/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Form/index.html" afterPath="$PROJECT_DIR$/var/tests/Form/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Kernel.php.html" afterPath="$PROJECT_DIR$/var/tests/Kernel.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/Version20190203162100.php.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/Version20190203162100.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/Version20190203175127.php.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/Version20190203175127.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/Version20190204211448.php.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/Version20190204211448.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/Version20190206084706.php.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/Version20190206084706.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/Version20190206085306.php.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/Version20190206085306.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/Version20190206104849.php.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/Version20190206104849.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/Version20190206144952.php.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/Version20190206144952.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Migrations/index.html" afterPath="$PROJECT_DIR$/var/tests/Migrations/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Repository/AdvertRepository.php.html" afterPath="$PROJECT_DIR$/var/tests/Repository/AdvertRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Repository/ApplicationRepository.php.html" afterPath="$PROJECT_DIR$/var/tests/Repository/ApplicationRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Repository/CategoryRepository.php.html" afterPath="$PROJECT_DIR$/var/tests/Repository/CategoryRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Repository/DepartmentRepository.php.html" afterPath="$PROJECT_DIR$/var/tests/Repository/DepartmentRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Repository/UserRepository.php.html" afterPath="$PROJECT_DIR$/var/tests/Repository/UserRepository.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Repository/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/Repository/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Repository/index.html" afterPath="$PROJECT_DIR$/var/tests/Repository/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Service/FileUploader.php.html" afterPath="$PROJECT_DIR$/var/tests/Service/FileUploader.php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Service/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/Service/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/Service/index.html" afterPath="$PROJECT_DIR$/var/tests/Service/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/dashboard.html" afterPath="$PROJECT_DIR$/var/tests/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/tests/index.html" afterPath="$PROJECT_DIR$/var/tests/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/log/dev.log" afterPath="$PROJECT_DIR$/var/log/dev.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -139,28 +78,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplicationTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Entity/ApplicationTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding>
-                <element signature="e#118#140#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdvertTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Entity/AdvertTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CategoryTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Entity/CategoryTest.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -174,7 +91,7 @@
       <file leaf-file-name="UserTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Entity/UserTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="1665">
               <caret line="119" column="5" lean-forward="false" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
               <folding>
                 <element signature="e#118#140#0#PHP" expanded="true" />
@@ -186,7 +103,7 @@
       <file leaf-file-name="DepartmentTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Entity/DepartmentTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
+            <state relative-caret-position="585">
               <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#118#140#0#PHP" expanded="true" />
@@ -215,11 +132,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvertController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdvertController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/AdvertController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="496">
               <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="405">
+                <caret line="27" column="76" lean-forward="true" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -258,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/translations/paginator.fr.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/AdminCategoryController.php" />
         <option value="$PROJECT_DIR$/src/Form/AccountType.php" />
         <option value="$PROJECT_DIR$/templates/includes/flashmessages.html.twig" />
@@ -290,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/Controller/AdminUserController.php" />
         <option value="$PROJECT_DIR$/templates/admin_user/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/includes/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/AdvertController.php" />
         <option value="$PROJECT_DIR$/templates/advert/view.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/Application.php" />
@@ -302,13 +240,15 @@
         <option value="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/makefile" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tests/Entity/ApplicationTest.php" />
         <option value="$PROJECT_DIR$/tests/Entity/AdvertTest.php" />
         <option value="$PROJECT_DIR$/tests/Entity/UserTest.php" />
         <option value="$PROJECT_DIR$/tests/Entity/DepartmentTest.php" />
         <option value="$PROJECT_DIR$/tests/Controller/ContactControllerTest.php" />
         <option value="$PROJECT_DIR$/tests/AdvertControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AdvertController.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -444,7 +384,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="324" />
-    <option name="y" value="24" />
+    <option name="y" value="34" />
     <option name="width" value="1502" />
     <option name="height" value="1048" />
   </component>
@@ -485,34 +425,6 @@
             <path>
               <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
@@ -588,13 +500,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99535000" />
+    <option name="totallyTimeSpent" value="99783000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="324" y="24" width="1502" height="1048" extended-state="0" />
+    <frame x="324" y="34" width="1502" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17582418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -605,12 +517,22 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37105548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17582418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,13 +555,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/advert/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/application/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -866,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,18 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="436">
-            <caret line="128" column="45" lean-forward="false" selection-start-line="128" selection-start-column="45" selection-end-line="128" selection-end-column="45" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -923,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Entity/ApplicationTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="720">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="e#118#140#0#PHP" expanded="true" />
@@ -933,7 +835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Entity/AdvertTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="1230">
           <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding />
         </state>
@@ -949,7 +851,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Entity/UserTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="1665">
           <caret line="119" column="5" lean-forward="false" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
           <folding>
             <element signature="e#118#140#0#PHP" expanded="true" />
@@ -967,7 +869,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Entity/DepartmentTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="585">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#118#140#0#PHP" expanded="true" />
@@ -1017,8 +919,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AdvertController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="496">
           <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="27" column="76" lean-forward="true" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
