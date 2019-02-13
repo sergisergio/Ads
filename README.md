@@ -8,7 +8,8 @@
 #### Travis CI [![Build Status](https://travis-ci.org/sergisergio/Ads.svg?branch=master)](https://travis-ci.org/sergisergio/Ads)  
 #### Scrutinizer CI [![Build Status](https://scrutinizer-ci.com/g/sergisergio/Ads/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sergisergio/Ads/build-status/master)  
 #### Circle CI [![CircleCI](https://circleci.com/gh/sergisergio/Ads.svg?style=svg)](https://circleci.com/gh/sergisergio/Ads)  
-#### Appveyor CI [![Build status](https://ci.appveyor.com/api/projects/status/jn415d4lsoe7m6ud?svg=true)](https://ci.appveyor.com/project/sergisergio/ads)
+#### Appveyor CI [![Build status](https://ci.appveyor.com/api/projects/status/jn415d4lsoe7m6ud?svg=true)](https://ci.appveyor.com/project/sergisergio/ads)  
+#### Codeship CI [![Codeship Status for sergisergio/Ads](https://app.codeship.com/projects/8b1b0e40-11c6-0137-544a-56e073643612/status?branch=master)](https://app.codeship.com/projects/327330)
 
 
 ### First step

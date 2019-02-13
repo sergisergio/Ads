@@ -7,6 +7,7 @@
 # scripts that are called at very beginning, before repo cloning
 init:
   - git config --global core.autocrlf input
+  - SET PATH=c:\php;%PATH%
 
 # enable service required for build/tests
 services:
