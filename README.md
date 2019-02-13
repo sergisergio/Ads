@@ -139,7 +139,6 @@ DOC:
 - [Travis CI](https://travis-ci.org/) (Voir fichier .travis.yml à la racine).
 - [Scrutinizer CI](https://scrutinizer-ci.com)
 - [Circle CI](https://circleci.com/) (Voir .circleci/config.yml à la racine).
-- [Appveyor CI](https://ci.appveyor.com/project/sergisergio/ads)
 - [Codeship CI](https://codeship.com/) (configuration online/Vérifier version PHP).
 
 DOC SYMFONY && autres:  
