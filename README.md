@@ -8,7 +8,6 @@
 #### Travis CI [![Build Status](https://travis-ci.org/sergisergio/Ads.svg?branch=master)](https://travis-ci.org/sergisergio/Ads)  
 #### Scrutinizer CI [![Build Status](https://scrutinizer-ci.com/g/sergisergio/Ads/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sergisergio/Ads/build-status/master)  
 #### Circle CI [![CircleCI](https://circleci.com/gh/sergisergio/Ads.svg?style=svg)](https://circleci.com/gh/sergisergio/Ads)  
-#### Appveyor CI [![Build status](https://ci.appveyor.com/api/projects/status/jn415d4lsoe7m6ud?svg=true)](https://ci.appveyor.com/project/sergisergio/ads)  
 #### Codeship CI [![Codeship Status for sergisergio/Ads](https://app.codeship.com/projects/8b1b0e40-11c6-0137-544a-56e073643612/status?branch=master)](https://app.codeship.com/projects/327330)
 
 
@@ -157,6 +156,42 @@ Voir également:
 [TeamCity](https://www.jetbrains.com/teamcity/)  
 [Gitlab CI](https://about.gitlab.com/product/continuous-integration/)  
 [Buddy](https://buddy.works/)  
+
+### Step 9: API
+
+[API Platform](https://api-platform.com/)  
+[JWT](https://github.com/lexik/LexikJWTAuthenticationBundle) [TUTO JWT](https://api-platform.com/docs/core/jwt/)  
+[OAuth](https://github.com/FriendsOfSymfony/FOSOAuthServerBundle) [TUTO OAuth](https://oauth.net/)  
+[Postman](https://www.getpostman.com/)  
+[Richardson Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
+
+![Schéma](https://api-platform.com/static/f5bf57af8c8a3275d8ba1c9ced6e890d/9e5e8/SerializerWorkflow.png)  
+
+**Generate the SSH keys with JWT**
+
+``` bash
+$ mkdir -p config/jwt 
+$ openssl genrsa -out config/jwt/private.pem -aes256 4096
+$ openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem
+```
+
+Be careful: you must put the key you chose in the .env file 
+ 
+**Test Getting a token**
+
+```bash
+curl -X POST -H "Content-Type: application/json" {yourdomain}/api/login_check -d '{"username":"{yourusername}", "password":"{yourpassword}"}'
+
+```
+**Authentification**
+
+```bash
+curl -H "Authorization: Bearer {yourtoken}" {yourdomain}/api
+
+
+
+
+
 
 
 
