@@ -116,5 +116,6 @@ class DepartmentFixtures extends Fixture
             $manager->persist($department);
             $manager->flush();
         }
+
     }
 }

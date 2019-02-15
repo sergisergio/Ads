@@ -2,6 +2,24 @@
 
 {% block title %}Inscription{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        body {
+            background: #000 url(../images/services/bg_services.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1 {color: #FFF;font-weight: bold;}
+        label {color: #FFF;}
+        .form-control {
+            width: 60%;
+            margin: auto;
+        }
+        .btn {font-weight: bold;}
+    </style>
+{% endblock %}
+
 {% block body %}
 
     <div class="row" style="margin: 150px auto;">

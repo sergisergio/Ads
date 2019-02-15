@@ -2,8 +2,10 @@
 
 namespace App\Repository;
 
+use App\Entity\AdSearch;
 use App\Entity\Advert;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
@@ -50,6 +52,20 @@ class AdvertRepository extends ServiceEntityRepository
     */
 
     /**
+     *
+     */
+    public function findAllVisibleQuery($department)
+    {
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.department = :d')
+            ->setParameter('d', $department)
+            ->getQuery()
+            ->getResult()
+            ;
+
+    }
+
+    /**
      * @param string|null $term
      */
     public function getWithSearchQueryBuilder(?string $term): QueryBuilder
@@ -74,4 +90,5 @@ class AdvertRepository extends ServiceEntityRepository
 
         return $qb;
     }
+
 }

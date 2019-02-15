@@ -2,9 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\AdSearch;
 use App\Entity\Advert;
 use App\Entity\Category;
+use App\Entity\Department;
 use App\Form\AddAdvertType;
+use App\Form\AdSearchType;
 use App\Form\DepartmentType;
 use App\Repository\AdvertRepository;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -19,44 +22,52 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 class AdvertController extends AbstractController
 {
     /**
+     * @var AdvertRepository
+     */
+    private $repository;
+    /**
+     * @var ObjectManager
+     */
+    private $em;
+
+    public function __construct(AdvertRepository $repository, ObjectManager $em)
+    {
+
+        $this->repository = $repository;
+        $this->em = $em;
+    }
+
+    /**
      * @Route("/adverts", name="adverts")
      */
-    public function index(AdvertRepository $repository, Request $request, PaginatorInterface $paginator)
+    public function index(Request $request, PaginatorInterface $paginator)
     {
-        $em = $this->getDoctrine()->getManager();
-        $listAdverts = $em->getRepository(Advert::class)->findAll();
 
-        $q = $request->query->get('q');
-        $queryBuilder = $repository->getWithSearchQueryBuilder($q);
-
-        $pagination = $paginator->paginate(
-            $queryBuilder, /* query NOT result */
-            $request->query->getInt('page', 1)/*page number*/,
-            10/*limit per page*/
-        );
-
-        $form = $this->createForm(DepartmentType::class);
+        $search = new AdSearch();
+        $form = $this->createForm(AdSearchType::class, $search);
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $q = $request->query->get('q');
-            $queryBuilder = $repository->getByDepartmentQueryBuilder($q);
-
-            $pagination = $paginator->paginate(
-                $queryBuilder, /* query NOT result */
+        //dump($form->getData(), $search);
+            $adverts = $paginator->paginate(
+                $queryBuilder = $this->repository->findAll(),
                 $request->query->getInt('page', 1)/*page number*/,
                 10/*limit per page*/
             );
-            /*return $this->render('advert/index.html.twig', [
-                //'listAdverts' => $listAdverts,
-                'pagination' => $pagination,
-                'formSearch' => $form->createView(),
-            ]);*/
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            if ($search->getDepartment()) {
+                $department = $request->query->get('department');
+                $adverts = $paginator->paginate(
+                    $queryBuilder = $this->repository->findAllVisibleQuery($department),
+                    $request->query->getInt('page', 1)/*page number*/,
+                    10/*limit per page*/
+                );
+            }
         }
 
+
         return $this->render('advert/index.html.twig', [
-            //'listAdverts' => $listAdverts,
-            'pagination' => $pagination,
+            'pagination' => $adverts,
             'formSearch' => $form->createView(),
         ]);
     }

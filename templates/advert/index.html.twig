@@ -2,19 +2,45 @@
 
 {% block title %}Annonces{% endblock %}
 
+{% block stylesheets %}
+{{ parent() }}
+    <style>
+        label {display: none;}
+        h2 {margin-top: 50px !important;}
+        .btn, .btn:hover {background-color: #E8CE0E;border: #E8CE0E;}
+        h4 {font-weight: bold;}
+        .indexdate, p {color: #111;}
+        .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+            background-color: #E8CE0E;
+            border-color: #E8CE0E;
+        }
+        .pagination>li>a {color: #E8CE0E;}
+    </style>
+
+{% endblock %}
+
 {% block body %}
     <section id="services" class="service-item">
         <div class="container">
+            <div class="row">
+                {{ form_start(formSearch) }}
+                <div class="form-row align-items-end">
+                    <div class="col-md-4">
+                        {{ form_row(formSearch.department) }}
+                    </div>
+                    <div class="col-md-4">
+                        {{ form_row(formSearch.category) }}
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-success">Rechercher</button>
+                    </div>
+                </div>
+                {{ form_end(formSearch) }}
+            </div>
+
             <div class="center wow fadeInDown">
                 <h2>Nos annonces ({{ pagination.getTotalItemCount }})</h2>
             </div>
-
-            {{ form_start(formSearch) }}
-            <div class="row" style="display: inline-block;">
-                {{ form_row(formSearch.name) }}
-                <button type="submit" class="btn btn-success">Rechercher</button>
-            </div>
-            {{ form_end(formSearch) }}
 
             {{ knp_pagination_render(pagination) }}
             <div class="row">

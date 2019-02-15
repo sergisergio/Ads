@@ -237,7 +237,7 @@ class Advert
     /**
      * @Assert\Callback
      */
-    public function isContentValid(ExecutionContextInterface $context)
+    /*public function isContentValid(ExecutionContextInterface $context)
     {
         $forbiddenWords = array('démotivation', 'abandon');
 
@@ -250,7 +250,7 @@ class Advert
                 ->addViolation() // ceci déclenche l'erreur, ne l'oubliez pas
             ;
         }
-    }
+    }*/
 
     /**
      * @param \DateTime $updatedAt
