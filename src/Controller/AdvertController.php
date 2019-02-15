@@ -58,11 +58,12 @@ class AdvertController extends AbstractController
             if ($search->getDepartment()) {
                 $department = $request->query->get('department');
                 $adverts = $paginator->paginate(
-                    $queryBuilder = $this->repository->findAllVisibleQuery($department),
+                    $queryBuilder = $this->repository->findDepartment($department),
                     $request->query->getInt('page', 1)/*page number*/,
                     10/*limit per page*/
                 );
             }
+
         }
 
 

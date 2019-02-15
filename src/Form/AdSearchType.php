@@ -7,6 +7,7 @@ use App\Entity\Category;
 use App\Entity\Department;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -23,11 +24,11 @@ class AdSearchType extends AbstractType
                 'required' => false
             ])
             ->add('category', EntityType::class, [
+                'required' => false,
+                'label' => false,
                 'class' => Category::class,
                 'choice_label' => 'name',
-                'multiple' => false,
-                'placeholder' => 'Choisissez une catégorie',
-                'required' => false
+                'multiple' => true
             ])
         ;
     }

@@ -51,17 +51,15 @@ class AdvertRepository extends ServiceEntityRepository
     }
     */
 
-    /**
-     *
-     */
-    public function findAllVisibleQuery($department)
+    public function findDepartment($department)
     {
-        return $this->createQueryBuilder('a')
+        $query = $this->createQueryBuilder('a')
             ->andWhere('a.department = :d')
             ->setParameter('d', $department)
             ->getQuery()
-            ->getResult()
-            ;
+            ->getResult();
+
+        return $query;
 
     }
 
