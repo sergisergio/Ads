@@ -181,13 +181,82 @@ Be careful: you must put the key you chose in the .env file
 
 ```bash
 curl -X POST -H "Content-Type: application/json" {yourdomain}/api/login_check -d '{"username":"{yourusername}", "password":"{yourpassword}"}'
-
 ```
 **Authentification**
 
 ```bash
 curl -H "Authorization: Bearer {yourtoken}" {yourdomain}/api
+```
 
+### Step 9: Test Docker
+
+[DOC DOCKER](https://docs.docker.com/)  
+[DOCKER HUB](https://hub.docker.com/search/?q=&type=image)  
+Le docker Hub est un store où les utilisateurs de docker peuvent partager leurs images.  
+Installer une image: ```docker pull [image]  ```  
+Gérer une image: ```docker image [command]  ```  
+Lister les images téléchargées: ```docker image ls  ```  
+Supprimer une image: ```docker image rm [nom ou ID image]  ```  
+
+Vérifier les containers: ```docker container ls -a ```   
+Supprimer un container: ```docker container rm [container]```    
+
+- -t : fournit un terminal au docker.  
+- -i : permet d'écrire dans le conteneur (couplé à -t)
+- -d : exécute le conteneur en arrière-plan. 
+- -v : permet de monter u nrépertoire local sur le conteneur.  
+- -p : permet de binder un port sur le conteneur vers un port sur le host. 
+
+Le Dockerfile est un fichier qui contient toutes les instructions pour créer une image. 
+ 
+Liste des instructions:    
+```
+FROM # Pour choisir l'image sur laquelle on se base, toujours en premier  
+RUN # Permet d'exécuter une commande  
+CMD # Commande exécutée au démarrage du conteneur par défaut  
+EXPOSE # Ouvre un port  
+ENV # Permet d'éditer des variables d'environnement  
+ARG # Un peu comme ENV, mais seulement le temps de la construction de l'image  
+COPY # Permet de copier un fichier ou répertoire de l'hôte vers l'image  
+ADD # Permet de copier un fichier de l'hôte ou depuis une URL vers l'image, permet également de décompresser une archive tar  
+LABEL # Des métadonnées utiles pour certains logiciels de gestion de conteneurs, comme rancher ou swarm, ou tout simplement pour mettre des informations sur l'image.  
+ENTRYPOINT # Commande exécutée au démarrage du conteneur, non modifiable, utilisée pour package une commande  
+VOLUME # Crée une partition spécifique  
+WORKDIR # Permet de choisir le répertoire de travail  
+USER # Choisit l'utilisateur qui lance la commande du ENTRYPOINT ou du CMD  
+ONBUILD # Crée un step qui sera exécuté seulement si notre image est choisie comme base  
+HEALTHCHECK # Permet d'ajouter une commande pour vérifier le fonctionnement de votre conteneur  
+STOPSIGNAL # permet de choisir le [signal](http://man7.org/linux/man-pages/man7/signal.7.html) qui sera envoyé au conteneur lorsque vous ferez un docker container stop  
+```
+
+Construire l'image:  
+```docker image build -t [imagename]:[tag] [dockerfile folder]```  
+Exemple: ```docker image build -t philippe/apache . ```  
+
+Tester l'image:  
+```docker container run -ti -p 80:80 philippe/apache ```
+
+See this [REPO](https://gitlab.com/Guikingone/Practice)
+
+A ce stade, voici ce que j'ai:  
+
+```docker build -t philippe . ```  
+Les étapes de construction du Dockerfile se déroulent.  
+
+```docker ps -a```
+Cela permet de voir l'ID du container et l'image.
+
+```docker-compose up```
+
+```docker-compose exec [nom_du_service] sh```  
+
+A ce moment, si je fais un ```php -v```, j'obtiens une 7.1 alors que je suis en 7.2
+
+```docker-compose ps``` vérifie que tout est lancé (le state doit être en Up)
+
+Note: si je veux d'autres services type nginx, phpmyadmin, redis et autres, il faut les ajouter dans docker-compose.yaml.  
+
+Voir aussi ce [REPO GITHUB](https://github.com/maxpou/docker-symfony) très intéressant.  
 
 
 

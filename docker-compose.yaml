@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  # Core configuration
+  php-fpm:
+    build: .
+    ports:
+      - "8088:80"
+
+
+
