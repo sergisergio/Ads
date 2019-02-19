@@ -1,7 +1,7 @@
 # Ads
 
 ## 3WA/SensioLabsUniversity Project
-
+[![SymfonyInsight](https://insight.symfony.com/projects/264de5a7-6207-4608-b77b-6b54c39c2594/small.svg)](https://insight.symfony.com/projects/264de5a7-6207-4608-b77b-6b54c39c2594)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2c10e9737f044bdfa78eb8bcc112ed4a)](https://www.codacy.com/app/sergisergio/Ads?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sergisergio/Ads&amp;utm_campaign=Badge_Grade)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sergisergio/Ads/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sergisergio/Ads/?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/43cd4ab9f7d28c7085cb/maintainability)](https://codeclimate.com/github/sergisergio/Ads/maintainability)  
@@ -261,6 +261,7 @@ Voir aussi ce [REPO GITHUB](https://github.com/maxpou/docker-symfony) très int�
 ### Step 10: Test Blackfire  
 
 [Blackfire](https://blackfire.io/)  
+[Les 5 principaux composants de Blackfire](https://blackfire.io/docs/reference-guide/faq)  
 [Blackfire Doc](https://blackfire.io/docs/introduction)  
 Voir fichier .blackfire.yml à la racine
 
