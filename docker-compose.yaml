@@ -1,11 +1,65 @@
 version: "3.1"
 
 services:
-  # Core configuration
-  php-fpm:
-    build: .
-    ports:
-      - "8088:80"
+    # Core configuration
+    php-fpm:
+        container_name: CONTAINER_php-fpm
+        build: .
+        environment:
+            BLACKFIRE_SERVER_ID: '${BLACKFIRE_SERVER_ID}'
+            BLACKFIRE_SERVER_TOKEN: '${BLACKFIRE_SERVER_TOKEN}'
+        ports:
+            - '8081:80'
+        #volumes:
+            #- './:${WORKPATH}:rw,cached'
+            # Prendre le dossier sur la machine et l'envoyer dans le container
+            #- './docker/php/conf/php.ini:/usr/local/etc/php/php.ini'
+        #restart: always
+
+    # DB configuration
+    #mysql:
+        #container_name: CONTAINER_mysql
+        #image: mysql:5.7
+        #ports:
+        #- '3306:3306'
+        #environment:
+          #MYSQL_DATABASE: 'testDocker'
+          #MYSQL_USER: 'root'
+          #MYSQL_PASSWORD: 'root'
+          #MYSQL_ROOT_PASSWORD: 'root'
+        #volumes:
+        #- 'mysql:/var/lib/mysql'
+        #restart: always
+
+    #postgresql:
+        #container_name: CONTAINER_postgresql
+        #image: postgres:9.6-alpine
+        #environment:
+          #POSTGRES_DB: '${POSTGRES_DB}'
+          #POSTGRES_USER: '${POSTGRES_USER}'
+          #POSTGRES_PASSWORD: '${POSTGRES_PASSWORD}'
+        #ports:
+        #- '5462:5432'
+        #volumes:
+        #- 'db-data:/var/lib/postgresql/data:rw'
+        #restart: always
+
+    # Performances configuration
+    #blackfire:
+        #container_name: CONTAINER_blackfire
+        #image: blackfire/blackfire
+        #environment:
+          #BLACKFIRE_LOG_LEVEL: 4
+          #BLACKFIRE_SERVER_ID: '${BLACKFIRE_SERVER_ID}'
+          #BLACKFIRE_SERVER_TOKEN: '${BLACKFIRE_SERVER_TOKEN}'
+          #BLACKFIRE_CLIENT_ID: '${BLACKFIRE_CLIENT_ID}'
+          #BLACKFIRE_CLIENT_TOKEN: '${BLACKFIRE_CLIENT_TOKEN}'
+        #links:
+        #- php-fpm
+        #volumes:
+        #- './:${WORKFOLDER}:rw,delegated'
+        #restart: always
+
 
 
 
