@@ -23,6 +23,7 @@
 - AgreeTerms and remember_me
 - UserFixtures
 - Condition "is_granted" in navbar.
+- token and validation added in User Entity (see User Checkers)
 
 Security DOC:  
 [SF DOC Security](https://symfony.com/doc/current/security.html)   
@@ -32,6 +33,7 @@ Security DOC:
 [SF DOC CSRF protection](https://symfony.com/doc/current/security/csrf.html)
 [SF DOC registration form](https://symfony.com/doc/current/doctrine/registration_form.html)  
 [SymfonyCasts Security](https://symfonycasts.com/screencast/symfony-security)
+[Users Checkers](https://symfony.com/doc/current/security/user_checkers.html)
 
 - Advert Entity created (with constraints and Unique Entity)  
 - relation ManyToOne with User Entity (author field).

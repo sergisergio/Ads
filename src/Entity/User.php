@@ -88,6 +88,16 @@ class User implements UserInterface
      */
     private $mode;
 
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $token;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $validation;
+
     public function __construct()
     {
         $this->adverts = new ArrayCollection();
@@ -290,6 +300,30 @@ class User implements UserInterface
     public function setMode(string $mode): self
     {
         $this->mode = $mode;
+
+        return $this;
+    }
+
+    public function getToken(): ?string
+    {
+        return $this->token;
+    }
+
+    public function setToken(?string $token): self
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    public function getValidation(): ?bool
+    {
+        return $this->validation;
+    }
+
+    public function setValidation(bool $validation): self
+    {
+        $this->validation = $validation;
 
         return $this;
     }

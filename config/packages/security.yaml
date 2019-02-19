@@ -24,6 +24,7 @@ security:
             logout:
                 path: security_logout
                 target: home
+            user_checker: App\Security\UserChecker
             remember_me:
                 secret: '%kernel.secret%'
                 lifetime: 604800 # 1 week in seconds

@@ -26,6 +26,7 @@ class UserFixtures extends Fixture
         $candidate->setRoles(['ROLE_CANDIDATE']);
         $candidate->setPassword($this->passwordEncoder->encodePassword($candidate, 'philippe'));
         $candidate->setMode('0');
+        $candidate->setValidation(true);
         $manager->persist($candidate);
 
         $recruiter = new User();
@@ -34,6 +35,7 @@ class UserFixtures extends Fixture
         $recruiter->setRoles(['ROLE_RECRUITER']);
         $recruiter->setPassword($this->passwordEncoder->encodePassword($recruiter, 'philippe'));
         $recruiter->setMode('1');
+        $recruiter->setValidation(true);
         $manager->persist($candidate);
 
         $admin = new User();
@@ -42,6 +44,7 @@ class UserFixtures extends Fixture
         $admin->setPassword($this->passwordEncoder->encodePassword($admin, 'admin'));
         $admin->setRoles(['ROLE_ADMIN']);
         $admin->setMode('2');
+        $admin->setValidation(true);
         $manager->persist($admin);
 
         $manager->flush();
