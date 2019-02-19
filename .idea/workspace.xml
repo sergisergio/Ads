@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc3fa373-88c1-4da1-9148-d33c26fd954a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/dev.log" afterDir="false" />
-    </list>
+    <list default="true" id="bc3fa373-88c1-4da1-9148-d33c26fd954a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +35,7 @@
           <entry key="json" value="2" />
           <entry key="makefile" value="1" />
           <entry key="md" value="4" />
-          <entry key="php" value="100" />
+          <entry key="php" value="101" />
           <entry key="sh" value="2" />
           <entry key="twig" value="101" />
           <entry key="yaml" value="22" />
@@ -60,7 +51,7 @@
           <entry key="Ini" value="1" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="4" />
-          <entry key="PHP" value="101" />
+          <entry key="PHP" value="102" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Twig" value="101" />
           <entry key="YAML" value="24" />
@@ -71,7 +62,7 @@
           <entry key="Dockerfile" value="84" />
           <entry key="env" value="28" />
           <entry key="gitignore" value="18" />
-          <entry key="md" value="4687" />
+          <entry key="md" value="4728" />
           <entry key="php" value="8726" />
           <entry key="twig" value="5236" />
           <entry key="yaml" value="788" />
@@ -81,7 +72,7 @@
         <counts>
           <entry key=".env file" value="13" />
           <entry key="Dockerfile" value="84" />
-          <entry key="Markdown" value="4687" />
+          <entry key="Markdown" value="4728" />
           <entry key="PHP" value="8726" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="Twig" value="5236" />
@@ -154,21 +145,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
-                <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <first_editor relative-caret-position="376">
+                <caret line="273" lean-forward="true" selection-start-line="273" selection-end-line="273" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/advert/view.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#7#22#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -387,9 +384,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1047" />
+    <option name="x" value="1271" />
     <option name="y" value="104" />
-    <option name="width" value="1461" />
+    <option name="width" value="1237" />
     <option name="height" value="1215" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -424,7 +421,7 @@
             <path>
               <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ads" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
@@ -446,19 +443,7 @@
             <path>
               <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ads" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="462c0819:PsiDirectoryNode" />
               <item name="var" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ads" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -517,18 +502,18 @@
       <workItem from="1549978273220" duration="4867000" />
       <workItem from="1550136458501" duration="13745000" />
       <workItem from="1550221149746" duration="21983000" />
-      <workItem from="1550569519175" duration="12665000" />
+      <workItem from="1550569519175" duration="13275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195026000" />
+    <option name="totallyTimeSpent" value="195636000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1047" y="104" width="1461" height="1215" extended-state="0" />
+    <frame x="1271" y="104" width="1237" height="1215" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1952079" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23179917" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -567,13 +552,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/symfony.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -915,10 +893,19 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <first_editor relative-caret-position="376">
+            <caret line="273" lean-forward="true" selection-start-line="273" selection-end-line="273" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#7#22#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

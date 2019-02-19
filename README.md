@@ -267,6 +267,10 @@ Voir aussi ce [REPO GITHUB](https://github.com/maxpou/docker-symfony) très int�
 [Blackfire Doc](https://blackfire.io/docs/introduction)  
 Voir fichier .blackfire.yml à la racine
 
+### Step 11: CacheKernel
+
+[HTTP Cache](https://symfony.com/doc/master/http_cache.html)
+
 
 
 
