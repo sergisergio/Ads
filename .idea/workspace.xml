@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc3fa373-88c1-4da1-9148-d33c26fd954a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,7 @@
     <session id="-1531341000">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.88" value="1" />
@@ -56,7 +56,7 @@
           <entry key="Dockerfile" value="84" />
           <entry key="env" value="15" />
           <entry key="gitignore" value="18" />
-          <entry key="md" value="4450" />
+          <entry key="md" value="4505" />
           <entry key="php" value="8285" />
           <entry key="twig" value="5233" />
           <entry key="yaml" value="318" />
@@ -65,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dockerfile" value="84" />
-          <entry key="Markdown" value="4450" />
+          <entry key="Markdown" value="4505" />
           <entry key="PHP" value="8285" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="Twig" value="5233" />
@@ -141,8 +141,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="502">
-                <caret line="255" column="121" selection-start-line="255" selection-start-column="121" selection-end-line="255" selection-end-column="121" />
+              <first_editor relative-caret-position="205">
+                <caret line="214" column="22" selection-start-line="214" selection-start-column="22" selection-end-line="214" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -382,7 +382,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="634" />
+    <option name="x" value="630" />
     <option name="y" value="165" />
     <option name="width" value="1959" />
     <option name="height" value="1215" />
@@ -529,10 +529,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181954000" />
+    <option name="totallyTimeSpent" value="182361000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="634" y="165" width="1959" height="1215" extended-state="0" />
+    <frame x="630" y="165" width="1959" height="1215" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1627543" />
@@ -915,8 +915,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="502">
-            <caret line="255" column="121" selection-start-line="255" selection-start-column="121" selection-end-line="255" selection-end-column="121" />
+          <first_editor relative-caret-position="205">
+            <caret line="214" column="22" selection-start-line="214" selection-start-column="22" selection-end-line="214" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
