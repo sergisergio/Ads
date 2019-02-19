@@ -258,6 +258,12 @@ Note: si je veux d'autres services type nginx, phpmyadmin, redis et autres, il f
 
 Voir aussi ce [REPO GITHUB](https://github.com/maxpou/docker-symfony) très intéressant.  
 
+### Step 10: Test Blackfire  
+
+[Blackfire](https://blackfire.io/)  
+[Blackfire Doc](https://blackfire.io/docs/introduction)  
+Voir fichier .blackfire.yml à la racine
+
 
 
 
