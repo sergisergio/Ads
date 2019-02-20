@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Form\ResetPasswordType;
 use App\Form\UserRegistrationType;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -124,12 +125,15 @@ class SecurityController extends AbstractController
 
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted()) {
             $user = $form->getData();
             $email = $user->getEmail();
 
+
             $repository = $this->getDoctrine()->getRepository(User::class);
             $userMail = $repository->findOneBy(['email' => $email]);
+            //dd($userMail);
+
 
             $token = $generator->generateToken();
             $userMail->setToken($token);
@@ -144,7 +148,7 @@ class SecurityController extends AbstractController
                     ->setBody('<a href="http://localhost:8000/resetpassword?user=' . $userMail->getId() . '&token=' . $token . '">Réinitialiser votre mot de passe</a>', 'text/html');
                 $mailer->send($message);
                 $this->addFlash(
-                    'info',
+                    'success',
                     'Un mail vous a été envoyé, cliquez sur le lien pour réinitialiser votre mot de passe.'
                 );
             }
@@ -156,6 +160,43 @@ class SecurityController extends AbstractController
                 'formForgotPassword' => $form->createView(),
             ]
         );
+    }
 
+    /**
+     * Page pour réinitialiser son mot de passe
+     *
+     * @Route("/resetpassword", name="security_reset")
+     */
+    function resetPasswordPage(Request $request, UserPasswordEncoderInterface $encoder)
+    {
+        $token = $request->get('token');
+        if (!$token) {
+            return new Response(new InvalidCsrfTokenException());
+        }
+
+        $user = $this->getDoctrine()->getRepository(User::class)->findOneBy(['token' => $request->get('token')]);
+        if (!$user) {
+            throw $this->createNotFoundException();
+        }
+        if ($user->getToken() !== $token) {
+            throw $this->createNotFoundException();
+        }
+
+        $form = $this->createForm(ResetPasswordType::class, $user);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $password = $form->getData();
+            $hash = $encoder->encodePassword($password, $user->getPlainPassword());
+            $user->setPassword($hash);
+            $user->setResetToken('');
+            $this->getDoctrine()->getManager()->flush();
+            $this->addFlash('success', 'Votre mot de passe a bien été réinitialisé !');
+            return $this->redirectToRoute('security_login');
+        }
+        return $this->render(
+            'security/resetpasswordpage.html.twig', [
+                'formResetPassword' => $form->createView(),
+            ]
+        );
     }
 }

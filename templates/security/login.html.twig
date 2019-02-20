@@ -23,9 +23,9 @@
 {% block body %}
 
     <div class="row" style="margin: 150px auto;">
+        {{ include('includes/flashmessages.html.twig') }}
         <div class="col-sm-8 col-sm-offset-2 text-center">
             <h1>Connexion</h1>
-            {{ include('includes/flashmessages.html.twig') }}
             <form method="post" action="{{ path('security_login') }}">
                 {% if error %}
                     <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
