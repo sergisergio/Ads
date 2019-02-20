@@ -6,6 +6,7 @@ use App\Entity\User;
 use App\Form\UserRegistrationType;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -109,5 +110,52 @@ class SecurityController extends AbstractController
             $this->addFlash('success', 'Votre compte a bien été activé');
         }
         return $this->redirecttoRoute('security_login');
+    }
+
+    /**
+     * @Route("/forgotpassword", name="security_forgot")
+     */
+    public function forgotPassword(Request $request, \Swift_Mailer $mailer, TokenGeneratorInterface $generator)
+    {
+        $user = new User();
+        $form = $this->createFormBuilder($user)
+            ->add('email', EmailType::class)
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $user = $form->getData();
+            $email = $user->getEmail();
+
+            $repository = $this->getDoctrine()->getRepository(User::class);
+            $userMail = $repository->findOneBy(['email' => $email]);
+
+            $token = $generator->generateToken();
+            $userMail->setToken($token);
+
+            $this->getDoctrine()->getManager()->flush();
+
+            if ($userMail){
+
+                $message = (new \Swift_Message('Réinitialisation de votre mot de passe'))
+                    ->setFrom('ptraon@gmail.com')
+                    ->setTo($user->getEmail())
+                    ->setBody('<a href="http://localhost:8000/resetpassword?user=' . $userMail->getId() . '&token=' . $token . '">Réinitialiser votre mot de passe</a>', 'text/html');
+                $mailer->send($message);
+                $this->addFlash(
+                    'info',
+                    'Un mail vous a été envoyé, cliquez sur le lien pour réinitialiser votre mot de passe.'
+                );
+            }
+            return $this->redirectToRoute('security_login');
+        }
+
+        return $this->render(
+            'security/forgotpassword.html.twig', [
+                'formForgotPassword' => $form->createView(),
+            ]
+        );
+
     }
 }
