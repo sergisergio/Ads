@@ -10,7 +10,7 @@ use App\Form\AddAdvertType;
 use App\Form\AdSearchType;
 use App\Form\DepartmentType;
 use App\Repository\AdvertRepository;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\Request;
@@ -30,7 +30,7 @@ class AdvertController extends AbstractController
      */
     private $em;
 
-    public function __construct(AdvertRepository $repository, ObjectManager $em)
+    public function __construct(AdvertRepository $repository, EntityManagerInterface $em)
     {
 
         $this->repository = $repository;
@@ -76,7 +76,7 @@ class AdvertController extends AbstractController
     /**
      * @Route("/advert/add", name="add_advert")
      */
-    public function add(Request $request, ObjectManager $manager)
+    public function add(Request $request, EntityManagerInterface $manager)
     {
         $advert = new Advert();
         $form = $this->createForm(AddAdvertType::class, $advert);
@@ -115,7 +115,7 @@ class AdvertController extends AbstractController
      * @Route("/advert/edit/{id}", name="edit_advert")
      *
      */
-    public function edit(Advert $advert, Request $request, ObjectManager $manager)
+    public function edit(Advert $advert, Request $request, EntityManagerInterface $manager)
     {
         //$advert = $this->getDoctrine()->getRepository(Advert::class)->find($id);
         if (null == $advert) {

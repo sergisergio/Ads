@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\ResetPasswordType;
 use App\Form\UserRegistrationType;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\HttpFoundation\Request;
@@ -42,7 +42,7 @@ class SecurityController extends AbstractController
      * @Route("/register", name="security_register")
      */
     public function register(Request $request,
-                             ObjectManager $om,
+                             EntityManagerInterface $om,
                              UserPasswordEncoderInterface $encoder,
                              \Swift_Mailer $mailer,
                              TokenGeneratorInterface $generator)

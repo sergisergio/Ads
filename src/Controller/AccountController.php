@@ -9,7 +9,7 @@ use App\Form\AccountType;
 use App\Form\CurriculumType;
 use App\Repository\ApplicationRepository;
 use App\Service\FileUploader;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -98,7 +98,7 @@ class AccountController extends AbstractController
     /**
      * @Route("/account/{id}", name="account")
      */
-    public function view($id, Request $request, ObjectManager $manager)
+    public function view($id, Request $request, EntityManagerInterface $manager)
     {
         $user = $this->getDoctrine()->getRepository(User::class)->find($id);
         if (null === $user) {

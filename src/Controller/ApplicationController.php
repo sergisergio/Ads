@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Entity\Advert;
 use App\Entity\Application;
 use App\Form\ApplicationType;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,7 +15,7 @@ class ApplicationController extends AbstractController
     /**
      * @Route("/application/annonce_{id}", name="application")
      */
-    public function index(Request $request, ObjectManager $manager, $id)
+    public function index(Request $request, EntityManagerInterface $manager, $id)
     {
         $advert = $manager->getRepository(Advert::class)->find($id);
         $application = new Application();
